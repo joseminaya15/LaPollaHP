@@ -129,13 +129,36 @@ body
 		max-width 40px
 .js-partidos
 	flexCenter()
+	padding 10px 0
+	border-bottom 1px solid #000000
 	p
 		margin 0
+		line-height 18px
 	.js-partidos__fecha
+		width 100%
+		max-width 200px
 		p
 			margin 0
 	.js-partidos__versus
 		flexCenter()
+		width 100%
+		max-width 500px
+		justify-content center
+		p
+			width 100%
+			max-width 25px
+			text-align center
+		.js-partido__versus--flag
+			flexCenter()
+			width 100%
+			max-width 235px
+			padding 0 10px
+			&:nth-child(1)
+				justify-content flex-end
+			&:nth-child(2)
+				justify-content flex-start
+			.mdl-radio
+				font-weight 100
 .js-fondo__imagen
 	background url(../img/fondo/fondo-imagen.jpg) no-repeat center center
 	background-size cover

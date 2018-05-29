@@ -50,11 +50,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/arabia_saudita.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Arabia Saudi</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/arabia_saudita.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -84,11 +84,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/uruguay.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Uruguay</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/uruguay.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -118,11 +118,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/iran.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">RI de Ir&aacute;n</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/iran.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -152,11 +152,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/españa.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Espa&ntilde;a</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/españa.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -186,11 +186,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/australia.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Australia</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/australia.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -220,11 +220,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/islandia.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Islandia</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/islandia.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -254,11 +254,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/dinamarca.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Dinamarca</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/dinamarca.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -288,11 +288,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/nigeria.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Nigeria</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/nigeria.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -322,11 +322,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/serbia.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Serbia</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/serbia.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -356,11 +356,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/mexico.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">M&eacute;xico</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/mexico.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -390,11 +390,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Suiza</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -424,11 +424,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/republica_corea.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Rep&uacute;blica de Corea</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/republica_corea.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -458,11 +458,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/panama.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Panam&aacute;</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/panama.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -492,11 +492,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/inglaterra.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Inglaterra</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/inglaterra.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -526,11 +526,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/japon.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Jap&oacute;n</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/japon.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -560,11 +560,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/senegal.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Senegal</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/senegal.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -594,11 +594,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/egipto.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Egipto</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/egipto.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -628,11 +628,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/marruecos.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Marruecos</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/marruecos.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -662,11 +662,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/arabia_saudita.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Arabia Saudí</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/arabia_saudita.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -696,11 +696,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/españa.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">España</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/españa.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -730,11 +730,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/australia.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Australia</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/australia.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -764,11 +764,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/peru.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Perú</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/peru.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -798,11 +798,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/croacia.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Croacia</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/croacia.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -832,11 +832,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/costa_rica.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Costa Rica</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/costa_rica.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -866,11 +866,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/islandia.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Islandia</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/islandia.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -900,11 +900,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Suiza</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -934,11 +934,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Suiza</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -968,11 +968,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Suiza</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -1002,11 +1002,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Suiza</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -1036,11 +1036,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Suiza</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -1070,11 +1070,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Suiza</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -1104,11 +1104,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Suiza</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -1138,11 +1138,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Suiza</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -1172,11 +1172,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Suiza</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -1206,11 +1206,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Suiza</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -1240,11 +1240,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Suiza</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -1274,11 +1274,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Suiza</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -1308,11 +1308,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Suiza</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -1342,11 +1342,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Suiza</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -1376,11 +1376,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Suiza</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -1410,11 +1410,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Suiza</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -1444,11 +1444,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Suiza</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -1478,11 +1478,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Suiza</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -1512,11 +1512,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Suiza</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -1546,11 +1546,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Suiza</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -1580,11 +1580,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Suiza</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -1614,11 +1614,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Suiza</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
@@ -1648,11 +1648,11 @@
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                             <span class="mdl-radio__label">Suiza</span>
                                         </label>
-                                        <img src="<?php echo RUTA_IMG?>paises/suiza.png">
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
