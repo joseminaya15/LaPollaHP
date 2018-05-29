@@ -42,7 +42,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Rusia</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -76,7 +76,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Egipto</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -110,7 +110,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Marruecos</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -144,7 +144,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Portugal</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -178,7 +178,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Francia</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -212,7 +212,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Argentina</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -246,7 +246,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Per&uacute;</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -280,7 +280,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Croacia</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -314,7 +314,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Costa Rica</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -348,7 +348,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Alemania</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -382,7 +382,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Brasil</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -416,7 +416,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Suecia</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -450,7 +450,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">B&eacute;lgica</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -484,7 +484,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">T&uacute;nez</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -518,7 +518,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Colombia</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -552,7 +552,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Polonia</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -586,7 +586,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Rusia</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -620,7 +620,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Portugal</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -654,7 +654,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Uruguay</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -688,7 +688,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">RI de Irán</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -722,7 +722,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Dinamarca</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -756,7 +756,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Francia</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -790,7 +790,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Argentina</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -824,7 +824,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Brasil</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -858,7 +858,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Nigeria</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -892,7 +892,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Serbia</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -926,7 +926,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Brasil</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -960,7 +960,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Brasil</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -994,7 +994,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Brasil</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -1028,7 +1028,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Brasil</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -1062,7 +1062,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Brasil</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -1096,7 +1096,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Brasil</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -1130,7 +1130,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Brasil</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -1164,7 +1164,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Brasil</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -1198,7 +1198,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Brasil</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -1232,7 +1232,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Brasil</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -1266,7 +1266,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Brasil</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -1300,7 +1300,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Brasil</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -1334,7 +1334,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Brasil</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -1368,7 +1368,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Brasil</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -1402,7 +1402,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Brasil</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -1436,7 +1436,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Brasil</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -1470,7 +1470,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Brasil</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -1504,7 +1504,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Brasil</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -1538,7 +1538,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Brasil</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -1572,7 +1572,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Brasil</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -1606,7 +1606,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Brasil</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>
@@ -1640,7 +1640,7 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right" for="option-1">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Brasil</span>
                                             <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
                                         </label>

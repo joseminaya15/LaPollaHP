@@ -142,23 +142,31 @@ body
 	.js-partidos__versus
 		flexCenter()
 		width 100%
-		max-width 500px
+		max-width 525px
 		justify-content center
 		p
 			width 100%
-			max-width 25px
+			max-width 20px
 			text-align center
 		.js-partido__versus--flag
 			flexCenter()
 			width 100%
-			max-width 235px
+			max-width 255px
 			padding 0 10px
 			&:nth-child(1)
 				justify-content flex-end
 			&:nth-child(2)
 				justify-content flex-start
+			img
+				padding 0 10px
 			.mdl-radio
 				font-weight 100
+				&.js-right
+					padding-left 0
+					padding-right 24px
+					.mdl-radio__outer-circle
+						right 0
+						left initial					
 .js-fondo__imagen
 	background url(../img/fondo/fondo-imagen.jpg) no-repeat center center
 	background-size cover
