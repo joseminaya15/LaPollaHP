@@ -1,0 +1,259 @@
+$regular = 'BentonSansRegular'
+$medium  = 'BentonSansMedium'
+$bold    = 'BentonSansBold'
+$color   = #0096D6
+$Tcenter = translate(-50% , -50%)
+flexCenter()
+	display flex
+	display -webkit-flex
+	align-items center
+flexStart()
+	display flex
+	display -webkit-flex
+	align-items start
+flexEnd()
+	display flex
+	display -webkit-flex
+	align-items flex-end
+transitionOpacity()
+	-webkit-transition opacity .3s linear
+	-moz-transition opacity .3s linear
+	-ms-transition opacity .3s linear
+	-o-transition opacity .3s linear
+	transition opacity .3s linear
+transitionWidth()
+	-webkit-transition width .3s linear
+	-moz-transition width .3s linear
+	-ms-transition width .3s linear
+	-o-transition width .3s linear
+	transition width .3s linear
+transitionMaxWidth()
+	-webkit-transition max-width .3s linear
+	-moz-transition max-width .3s linear
+	-ms-transition max-width .3s linear
+	-o-transition max-width .3s linear
+	transition max-width .3s linear
+transitionBgColor()
+	-webkit-transition background-color .3s linear
+	-moz-transition background-color .3s linear
+	-ms-transition background-color .3s linear
+	-o-transition background-color .3s linear
+	transition background-color .3s linear
+transitionTransform()
+	-webkit-transition transform .3s linear
+	-moz-transition transform .3s linear
+	-ms-transition transform .3s linear
+	-o-transition transform .3s linear
+	transition transform .3s linear
+absolute()
+	position absolute
+	top 0
+	left 0
+	right 0
+	bottom 0
+relative()
+	position relative
+	top 0
+	left 0
+	right 0
+	bottom 0
+transform()
+	-webkit-transform $Tcenter
+    -moz-transform $Tcenter
+    -ms-transform $Tcenter
+    -o-transform $Tcenter
+    transform $Tcenter
+scale()
+	-webkit-transform scale(1)
+    -moz-transform scale(1)
+    -ms-transform scale(1)
+    -o-transform scale(1)
+    transform scale(1)
+flipCard()
+	-moz-backface-visibility hidden
+	-webkit-backface-visibility hidden
+	backface-visibility hidden
+	-webkit-transition -webkit-transform 500ms
+	-moz-transition -moz-transform 500ms
+	-o-transition -o-transform 500ms
+	transition transform 500ms
+	border-radius 5px
+	position absolute
+flipCardFront()
+	-webkit-transform perspective(600) rotateY(0)
+	-moz-transform perspective(600) rotateY(0)
+	-o-transform perspective(600) rotateY(0)
+	transform perspective(600) rotateY(0)
+flipCardBack()
+	-webkit-transform rotateY(-180deg)
+	-moz-transform rotateY(-180deg)
+	-o-transform rotateY(-180deg)
+	transform rotateY(-180deg)
+	z-index 900
+flipCardFrontHover()
+	-webkit-transform rotateY(180deg)
+	-moz-transform rotateY(180deg)
+	-o-transform rotateY(180deg)
+	transform rotateY(180deg)
+	-webkit-transform perspective(600) rotateY(180deg)
+	-moz-transform perspective(600) rotateY(180deg)
+	-o-transform perspective(600) rotateY(180deg)
+	transform perspective(600) rotateY(180deg)
+flipCardBackHover()
+	-webkit-transform rotateY(0)
+	-moz-transform rotateY(0)
+	-o-transform rotateY(0)
+	transform rotateY(0)
+	-webkit-transform perspective(600) rotateY(0)
+	-moz-transform perspective(600) rotateY(0)
+	-o-transform perspective(600) rotateY(0)
+	transform perspective(600) rotateY(0)
+	z-index 950
+body
+	margin 0
+	padding 0
+	overflow hidden
+	font-family $regular
+	color #000000
+	background-color #FFFFFF
+.js-header
+	position fixed
+	top 0
+	width 100%
+	background-color $color
+	z-index 20
+	padding 15px 25px
+	transitionOpacity()
+	flexCenter()
+	img
+		width 100%
+		max-width 40px
+.js-partidos
+	flexCenter()
+	p
+		margin 0
+	.js-partidos__fecha
+		p
+			margin 0
+	.js-partidos__versus
+		flexCenter()
+.js-fondo__imagen
+	background url(../img/fondo/fondo-imagen.jpg) no-repeat center center
+	background-size cover
+	absolute()
+	&:AFTER
+		content ''
+		background-color #000000
+		opacity .2
+		absolute()
+.js-window
+	absolute()
+	flexCenter()
+	transitionOpacity()
+	width 100%
+	height 100vh
+	z-index 5
+.js-container
+	transitionMaxWidth()
+	width 100%
+	max-width 1100px
+	height 100%
+	margin auto
+	position relative
+	padding 30px
+.js-input
+	margin 5px 0
+	padding 0 5px
+	.form-control
+		border-radius 0
+		height 42px
+		padding 6px 10px
+		font-size 15px
+		font-family $regular
+.mdl-radio__inner-circle
+	background #4983B6
+.mdl-radio__ripple-container 
+	.mdl-ripple
+		background #4983B6
+.mdl-radio
+	&.is-checked 
+		.mdl-radio__outer-circle
+			border 2px solid #4983B6
+.js-carousel
+	flexCenter()
+	justify-content flex-start
+	position relative
+	width 100%
+	max-width 675px
+	.table-responsive
+		width 100%
+		max-width 205px
+		margin auto
+		border 1px solid $color
+		border-radius 10px
+		table
+			margin 0
+.js-button
+	background-color $color
+	color #FFFFFF
+	text-transform initial
+	height 30px
+	line-height 20px
+	font-family $medium
+	max-width 120px
+	width 100%
+	&:hover
+		background-color $color
+.js-user
+	flexCenter()
+	justify-content flex-end
+	width 100%
+	p
+		margin 0
+		padding 0 10px
+		margin-right 10px
+		border-right 1px solid #FFFFFF
+		line-height 18px
+	a
+		font-family $medium
+		cursor pointer
+/*SCROLL*/
+::-webkit-scrollbar
+	width 8px
+	height 5px
+::-webkit-scrollbar-track
+	background-color transparent
+	border-radius 10px
+::-webkit-scrollbar-thumb
+	background-color #AAAAAA
+	border-radius 10px
+/*TABLE*/
+table
+	&>tbody
+		&>tr
+			&>td
+				color #000000
+				padding 5px 10px !important
+				line-height 16px !important
+	&>thead
+		&>tr
+			&>th
+				color #000000
+/*MODAL*/
+.modal
+	&.fade
+		.modal-dialog
+			position absolute
+			top 50%
+			left 50%
+			transform()
+		&.in
+			.modal-dialog
+				opacity 1
+				scale()
+				transform()
+@media ( max-width: 600px )
+	.js-container
+		align-items center
+			
+					
