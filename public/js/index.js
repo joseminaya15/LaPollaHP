@@ -1,22 +1,10 @@
-function getServicios(){
-	var servicio 	= $('#servicio').val();
-	var presupuesto = $('#presupuesto').val();
-	if(servicio == null || servicio == ''){
-		// $('.opacity-done').removeClass('animated fadeInRight');
-		// $('.opacity-done').addClass('animated fadeOutRight');
-		return;
-	}
-	$('#cardPresupuesto').addClass('animated fadeInRight');
-	if(presupuesto == null || presupuesto == ''){
-		// $('.opacity-done').removeClass('animated fadeInRight');
-		// $('.opacity-done').addClass('animated fadeOutRight');
-		return;
-	}
-	$('.opacity-done').addClass('animated fadeInRight');
-	$.ajax({
-		data : {tipo_servicio : servicio,
-				presupuesto   : presupuesto},
-		url  : 'Home/guardarServicios',
+function guardarScore(pais, empate){
+	console.log(pais);
+	console.log(empate);
+	/*$.ajax({
+		data : {pais   : pais,
+				empate : empate},
+		url  : 'Home/guardarScore',
 		type : 'POST'
 	}).done(function(data){
 		try{
@@ -30,7 +18,7 @@ function getServicios(){
       } catch (err){
         msj('error',err.message);
       }
-	});
+	});*/
 }
 function cerrarCesion(){
 	$.ajax({
