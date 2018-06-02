@@ -1,6 +1,8 @@
-function guardarScore(pais, empate){
+function guardarScore(pais, empate, id){
 	console.log(pais);
 	console.log(empate);
+	console.log($('#'+id).parents().parents().html());
+	$($('#'+id).parents().parents().find('.js-partidos')).css('background', '#D0D0D0')
 	/*$.ajax({
 		data : {pais   : pais,
 				empate : empate},

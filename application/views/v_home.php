@@ -30,7 +30,10 @@
                     <img src="<?php echo RUTA_IMG?>logo/logo_hp.png">
                     <p><?php echo $nombre ?></p>
                 </div>
-                <div class="js-container js-container--responsive">
+                <div class="js-container js-container--responsive" style="margin-top: 100px;">
+                    <p>Monto Acumulado de Facturas $<?php echo $cantidad ?></p>
+                    <p><?php echo $puntos ?> puntos</p>
+                    <p>x<?php echo $multi ?></p>
                     <ul class="nav nav-tabs" role="tablist">
                         <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Fase de Grupos</a></li>
                         <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Fase de Eliminatorias</a></li>
@@ -45,7 +48,7 @@
                                     <div class="js-partido__versus--flag">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Rusia</span>
-                                            <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked onclick="guardarScore('Rusia', '')">
+                                            <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked onclick="guardarScore('Rusia', '', this.id)">
                                         </label>
                                         <img src="<?php echo RUTA_IMG?>paises/rusia.png">
                                     </div>
@@ -53,14 +56,14 @@
                                     <div class="js-partido__versus--flag">
                                         <img src="<?php echo RUTA_IMG?>paises/arabia_saudita.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
-                                            <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="1" checked onclick="guardarScore('Arabia Saudi', '')">
+                                            <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="1" checked onclick="guardarScore('Arabia Saudi', '', this.id)">
                                             <span class="mdl-radio__label">Arabia Saudi</span>
                                         </label>
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
                                     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-3">
-                                        <input type="radio" id="option-3" class="mdl-radio__button" name="options" value="1" checked onclick="guardarScore('Rusia, Arabia Saudi', 'Empate')">
+                                        <input type="radio" id="option-3" class="mdl-radio__button" name="options" value="1" checked onclick="guardarScore('Rusia, Arabia Saudi', 'Empate', this.id)">
                                         <span class="mdl-radio__label">Empate</span>
                                     </label>
                                 </div>
@@ -79,7 +82,7 @@
                                     <div class="js-partido__versus--flag">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-1">
                                             <span class="mdl-radio__label">Egipto</span>
-                                            <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked onclick="guardarScore('Rusia', '')">
+                                            <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked onclick="guardarScore('Rusia', '', this.id)">
                                         </label>
                                         <img src="<?php echo RUTA_IMG?>paises/egipto.png">
                                     </div>
@@ -87,14 +90,14 @@
                                     <div class="js-partido__versus--flag">
                                         <img src="<?php echo RUTA_IMG?>paises/uruguay.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
-                                            <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked onclick="guardarScore('Rusia', '')">
+                                            <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked onclick="guardarScore('Rusia', '', this.id)">
                                             <span class="mdl-radio__label">Uruguay</span>
                                         </label>
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
                                     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
-                                        <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked onclick="guardarScore('Rusia', 'Empate')">
+                                        <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked onclick="guardarScore('Rusia', 'Empate', this.id)">
                                         <span class="mdl-radio__label">Empate</span>
                                     </label>
                                 </div>
