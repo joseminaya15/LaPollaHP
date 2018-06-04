@@ -35,11 +35,11 @@
                     <p><?php echo $puntos ?> puntos</p>
                     <p>x<?php echo $multi ?></p>
                     <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Fase de Grupos</a></li>
-                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Fase de Eliminatorias</a></li>
+                        <li role="presentation" class="active"><a href="#Fase1" aria-controls="Fase1" role="tab" data-toggle="tab">Fase de Grupos</a></li>
+                        <li role="presentation"><a href="#Fase2" aria-controls="Fase2" role="tab" data-toggle="tab">Fase de Eliminatorias</a></li>
                     </ul>
                     <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane active" id="home">
+                        <div role="tabpanel" class="tab-pane active" id="Fase1">
                             <div class="js-partidos" id="1">
                                 <div class="js-partidos__fecha">
                                     <p>14 jun. 2018 - 10:00 Hora Local Grupo A</p>
@@ -1674,8 +1674,566 @@
                                 </div>
                             </div>
                         </div>
-                        <div role="tabpanel" class="tab-pane" id="profile">
-                            
+                        <div role="tabpanel" class="tab-pane" id="Fase2">
+                            <div class="title-fase">
+                                <p>Octavos de final</p>
+                            </div>
+                            <div class="js-partidos" id="49">
+                                <div class="js-partidos__fecha">
+                                    <p>30 jun. 2018 - 09:00 Hora Kaza Arena</p>
+                                </div>
+                                <div class="js-partidos__versus">
+                                    <div class="js-partido__versus--flag">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-142">
+                                            <span class="mdl-radio__label">Inglaterra</span>
+                                            <input type="radio" id="option-142" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Inglaterra', '', 47)">
+                                        </label>
+                                        <img src="<?php echo RUTA_IMG?>paises/inglaterra.png">
+                                    </div>
+                                    <p>VS</p>
+                                    <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/belgica.png">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-143">
+                                            <input type="radio" id="option-143" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Bélgica', '', 47)">
+                                            <span class="mdl-radio__label">Bélgica</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="js-partidos__empate">
+                                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-144">
+                                        <input type="radio" id="option-144" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Inglaterra, Bélgica', 'Empate', 47)">
+                                        <span class="mdl-radio__label">Empate</span>
+                                    </label>
+                                </div>
+                                <div class="js-partidos__score">
+                                    <small>0 - 0</small>
+                                </div>
+                                <div class="js-partidos__puntaje">
+                                    <span>10 puntos</span>
+                                </div>
+                            </div>
+                            <div class="js-partidos" id="50">
+                                <div class="js-partidos__fecha">
+                                    <p>30 jun. 2018 - 13:00 Hora Fisht Stadium</p>
+                                </div>
+                                <div class="js-partidos__versus">
+                                    <div class="js-partido__versus--flag">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-142">
+                                            <span class="mdl-radio__label">Inglaterra</span>
+                                            <input type="radio" id="option-142" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Inglaterra', '', 47)">
+                                        </label>
+                                        <img src="<?php echo RUTA_IMG?>paises/inglaterra.png">
+                                    </div>
+                                    <p>VS</p>
+                                    <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/belgica.png">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-143">
+                                            <input type="radio" id="option-143" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Bélgica', '', 47)">
+                                            <span class="mdl-radio__label">Bélgica</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="js-partidos__empate">
+                                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-144">
+                                        <input type="radio" id="option-144" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Inglaterra, Bélgica', 'Empate', 47)">
+                                        <span class="mdl-radio__label">Empate</span>
+                                    </label>
+                                </div>
+                                <div class="js-partidos__score">
+                                    <small>0 - 0</small>
+                                </div>
+                                <div class="js-partidos__puntaje">
+                                    <span>10 puntos</span>
+                                </div>
+                            </div>
+                            <div class="js-partidos" id="51">
+                                <div class="js-partidos__fecha">
+                                    <p>01 jul. 2018 - 09:00 Hora Luzhniki Stadium</p>
+                                </div>
+                                <div class="js-partidos__versus">
+                                    <div class="js-partido__versus--flag">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-142">
+                                            <span class="mdl-radio__label">Inglaterra</span>
+                                            <input type="radio" id="option-142" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Inglaterra', '', 47)">
+                                        </label>
+                                        <img src="<?php echo RUTA_IMG?>paises/inglaterra.png">
+                                    </div>
+                                    <p>VS</p>
+                                    <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/belgica.png">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-143">
+                                            <input type="radio" id="option-143" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Bélgica', '', 47)">
+                                            <span class="mdl-radio__label">Bélgica</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="js-partidos__empate">
+                                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-144">
+                                        <input type="radio" id="option-144" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Inglaterra, Bélgica', 'Empate', 47)">
+                                        <span class="mdl-radio__label">Empate</span>
+                                    </label>
+                                </div>
+                                <div class="js-partidos__score">
+                                    <small>0 - 0</small>
+                                </div>
+                                <div class="js-partidos__puntaje">
+                                    <span>10 puntos</span>
+                                </div>
+                            </div>
+                            <div class="js-partidos" id="52">
+                                <div class="js-partidos__fecha">
+                                    <p>01 jul. 2018 - 13:00 Hora Nizhny Novgorod Stadium</p>
+                                </div>
+                                <div class="js-partidos__versus">
+                                    <div class="js-partido__versus--flag">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-142">
+                                            <span class="mdl-radio__label">Inglaterra</span>
+                                            <input type="radio" id="option-142" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Inglaterra', '', 47)">
+                                        </label>
+                                        <img src="<?php echo RUTA_IMG?>paises/inglaterra.png">
+                                    </div>
+                                    <p>VS</p>
+                                    <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/belgica.png">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-143">
+                                            <input type="radio" id="option-143" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Bélgica', '', 47)">
+                                            <span class="mdl-radio__label">Bélgica</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="js-partidos__empate">
+                                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-144">
+                                        <input type="radio" id="option-144" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Inglaterra, Bélgica', 'Empate', 47)">
+                                        <span class="mdl-radio__label">Empate</span>
+                                    </label>
+                                </div>
+                                <div class="js-partidos__score">
+                                    <small>0 - 0</small>
+                                </div>
+                                <div class="js-partidos__puntaje">
+                                    <span>10 puntos</span>
+                                </div>
+                            </div>
+                            <div class="js-partidos" id="52">
+                                <div class="js-partidos__fecha">
+                                    <p>02 jul. 2018 - 09:00 Hora Samara Arena</p>
+                                </div>
+                                <div class="js-partidos__versus">
+                                    <div class="js-partido__versus--flag">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-142">
+                                            <span class="mdl-radio__label">Inglaterra</span>
+                                            <input type="radio" id="option-142" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Inglaterra', '', 47)">
+                                        </label>
+                                        <img src="<?php echo RUTA_IMG?>paises/inglaterra.png">
+                                    </div>
+                                    <p>VS</p>
+                                    <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/belgica.png">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-143">
+                                            <input type="radio" id="option-143" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Bélgica', '', 47)">
+                                            <span class="mdl-radio__label">Bélgica</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="js-partidos__empate">
+                                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-144">
+                                        <input type="radio" id="option-144" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Inglaterra, Bélgica', 'Empate', 47)">
+                                        <span class="mdl-radio__label">Empate</span>
+                                    </label>
+                                </div>
+                                <div class="js-partidos__score">
+                                    <small>0 - 0</small>
+                                </div>
+                                <div class="js-partidos__puntaje">
+                                    <span>10 puntos</span>
+                                </div>
+                            </div>
+                            <div class="js-partidos" id="52">
+                                <div class="js-partidos__fecha">
+                                    <p>02 jul. 2018 - 13:00 Hora Rostov Arena</p>
+                                </div>
+                                <div class="js-partidos__versus">
+                                    <div class="js-partido__versus--flag">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-142">
+                                            <span class="mdl-radio__label">Inglaterra</span>
+                                            <input type="radio" id="option-142" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Inglaterra', '', 47)">
+                                        </label>
+                                        <img src="<?php echo RUTA_IMG?>paises/inglaterra.png">
+                                    </div>
+                                    <p>VS</p>
+                                    <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/belgica.png">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-143">
+                                            <input type="radio" id="option-143" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Bélgica', '', 47)">
+                                            <span class="mdl-radio__label">Bélgica</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="js-partidos__empate">
+                                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-144">
+                                        <input type="radio" id="option-144" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Inglaterra, Bélgica', 'Empate', 47)">
+                                        <span class="mdl-radio__label">Empate</span>
+                                    </label>
+                                </div>
+                                <div class="js-partidos__score">
+                                    <small>0 - 0</small>
+                                </div>
+                                <div class="js-partidos__puntaje">
+                                    <span>10 puntos</span>
+                                </div>
+                            </div>
+                            <div class="js-partidos" id="52">
+                                <div class="js-partidos__fecha">
+                                    <p>03 jul. 2018 - 09:00 Hora estadio de San Petersburgo</p>
+                                </div>
+                                <div class="js-partidos__versus">
+                                    <div class="js-partido__versus--flag">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-142">
+                                            <span class="mdl-radio__label">Inglaterra</span>
+                                            <input type="radio" id="option-142" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Inglaterra', '', 47)">
+                                        </label>
+                                        <img src="<?php echo RUTA_IMG?>paises/inglaterra.png">
+                                    </div>
+                                    <p>VS</p>
+                                    <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/belgica.png">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-143">
+                                            <input type="radio" id="option-143" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Bélgica', '', 47)">
+                                            <span class="mdl-radio__label">Bélgica</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="js-partidos__empate">
+                                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-144">
+                                        <input type="radio" id="option-144" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Inglaterra, Bélgica', 'Empate', 47)">
+                                        <span class="mdl-radio__label">Empate</span>
+                                    </label>
+                                </div>
+                                <div class="js-partidos__score">
+                                    <small>0 - 0</small>
+                                </div>
+                                <div class="js-partidos__puntaje">
+                                    <span>10 puntos</span>
+                                </div>
+                            </div>
+                            <div class="js-partidos" id="52">
+                                <div class="js-partidos__fecha">
+                                    <p>03 jul. 2018 - 13:00 Hora Spartak Stadium</p>
+                                </div>
+                                <div class="js-partidos__versus">
+                                    <div class="js-partido__versus--flag">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-142">
+                                            <span class="mdl-radio__label">Inglaterra</span>
+                                            <input type="radio" id="option-142" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Inglaterra', '', 47)">
+                                        </label>
+                                        <img src="<?php echo RUTA_IMG?>paises/inglaterra.png">
+                                    </div>
+                                    <p>VS</p>
+                                    <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/belgica.png">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-143">
+                                            <input type="radio" id="option-143" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Bélgica', '', 47)">
+                                            <span class="mdl-radio__label">Bélgica</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="js-partidos__empate">
+                                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-144">
+                                        <input type="radio" id="option-144" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Inglaterra, Bélgica', 'Empate', 47)">
+                                        <span class="mdl-radio__label">Empate</span>
+                                    </label>
+                                </div>
+                                <div class="js-partidos__score">
+                                    <small>0 - 0</small>
+                                </div>
+                                <div class="js-partidos__puntaje">
+                                    <span>10 puntos</span>
+                                </div>
+                            </div>
+                            <div class="title-fase">
+                                <p>Cuartos de final</p>
+                            </div>
+                            <div class="js-partidos" id="52">
+                                <div class="js-partidos__fecha">
+                                    <p>06 jul. 2018 - 09:00 Hora Nizhny Novgorod Stadium</p>
+                                </div>
+                                <div class="js-partidos__versus">
+                                    <div class="js-partido__versus--flag">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-142">
+                                            <span class="mdl-radio__label">Inglaterra</span>
+                                            <input type="radio" id="option-142" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Inglaterra', '', 47)">
+                                        </label>
+                                        <img src="<?php echo RUTA_IMG?>paises/inglaterra.png">
+                                    </div>
+                                    <p>VS</p>
+                                    <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/belgica.png">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-143">
+                                            <input type="radio" id="option-143" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Bélgica', '', 47)">
+                                            <span class="mdl-radio__label">Bélgica</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="js-partidos__empate">
+                                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-144">
+                                        <input type="radio" id="option-144" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Inglaterra, Bélgica', 'Empate', 47)">
+                                        <span class="mdl-radio__label">Empate</span>
+                                    </label>
+                                </div>
+                                <div class="js-partidos__score">
+                                    <small>0 - 0</small>
+                                </div>
+                                <div class="js-partidos__puntaje">
+                                    <span>10 puntos</span>
+                                </div>
+                            </div>
+                            <div class="js-partidos" id="52">
+                                <div class="js-partidos__fecha">
+                                    <p>06 jul. 2018 - 13:00 Hora Kazan Arena</p>
+                                </div>
+                                <div class="js-partidos__versus">
+                                    <div class="js-partido__versus--flag">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-142">
+                                            <span class="mdl-radio__label">Inglaterra</span>
+                                            <input type="radio" id="option-142" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Inglaterra', '', 47)">
+                                        </label>
+                                        <img src="<?php echo RUTA_IMG?>paises/inglaterra.png">
+                                    </div>
+                                    <p>VS</p>
+                                    <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/belgica.png">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-143">
+                                            <input type="radio" id="option-143" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Bélgica', '', 47)">
+                                            <span class="mdl-radio__label">Bélgica</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="js-partidos__empate">
+                                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-144">
+                                        <input type="radio" id="option-144" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Inglaterra, Bélgica', 'Empate', 47)">
+                                        <span class="mdl-radio__label">Empate</span>
+                                    </label>
+                                </div>
+                                <div class="js-partidos__score">
+                                    <small>0 - 0</small>
+                                </div>
+                                <div class="js-partidos__puntaje">
+                                    <span>10 puntos</span>
+                                </div>
+                            </div>
+                            <div class="js-partidos" id="52">
+                                <div class="js-partidos__fecha">
+                                    <p>07 jul. 2018 - 09:00 Hora Samara Arena</p>
+                                </div>
+                                <div class="js-partidos__versus">
+                                    <div class="js-partido__versus--flag">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-142">
+                                            <span class="mdl-radio__label">Inglaterra</span>
+                                            <input type="radio" id="option-142" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Inglaterra', '', 47)">
+                                        </label>
+                                        <img src="<?php echo RUTA_IMG?>paises/inglaterra.png">
+                                    </div>
+                                    <p>VS</p>
+                                    <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/belgica.png">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-143">
+                                            <input type="radio" id="option-143" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Bélgica', '', 47)">
+                                            <span class="mdl-radio__label">Bélgica</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="js-partidos__empate">
+                                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-144">
+                                        <input type="radio" id="option-144" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Inglaterra, Bélgica', 'Empate', 47)">
+                                        <span class="mdl-radio__label">Empate</span>
+                                    </label>
+                                </div>
+                                <div class="js-partidos__score">
+                                    <small>0 - 0</small>
+                                </div>
+                                <div class="js-partidos__puntaje">
+                                    <span>10 puntos</span>
+                                </div>
+                            </div>
+                            <div class="js-partidos" id="52">
+                                <div class="js-partidos__fecha">
+                                    <p>07 jul. 2018 - 13:00 Hora Fisht Stadium</p>
+                                </div>
+                                <div class="js-partidos__versus">
+                                    <div class="js-partido__versus--flag">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-142">
+                                            <span class="mdl-radio__label">Inglaterra</span>
+                                            <input type="radio" id="option-142" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Inglaterra', '', 47)">
+                                        </label>
+                                        <img src="<?php echo RUTA_IMG?>paises/inglaterra.png">
+                                    </div>
+                                    <p>VS</p>
+                                    <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/belgica.png">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-143">
+                                            <input type="radio" id="option-143" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Bélgica', '', 47)">
+                                            <span class="mdl-radio__label">Bélgica</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="js-partidos__empate">
+                                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-144">
+                                        <input type="radio" id="option-144" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Inglaterra, Bélgica', 'Empate', 47)">
+                                        <span class="mdl-radio__label">Empate</span>
+                                    </label>
+                                </div>
+                                <div class="js-partidos__score">
+                                    <small>0 - 0</small>
+                                </div>
+                                <div class="js-partidos__puntaje">
+                                    <span>10 puntos</span>
+                                </div>
+                            </div>
+                            <div class="title-fase">
+                                <p>Semifinales</p>
+                            </div>
+                            <div class="js-partidos" id="52">
+                                <div class="js-partidos__fecha">
+                                    <p>10 jul. 2018 - 13:00 Hora estadio de San Petersburgo</p>
+                                </div>
+                                <div class="js-partidos__versus">
+                                    <div class="js-partido__versus--flag">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-142">
+                                            <span class="mdl-radio__label">Inglaterra</span>
+                                            <input type="radio" id="option-142" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Inglaterra', '', 47)">
+                                        </label>
+                                        <img src="<?php echo RUTA_IMG?>paises/inglaterra.png">
+                                    </div>
+                                    <p>VS</p>
+                                    <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/belgica.png">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-143">
+                                            <input type="radio" id="option-143" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Bélgica', '', 47)">
+                                            <span class="mdl-radio__label">Bélgica</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="js-partidos__empate">
+                                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-144">
+                                        <input type="radio" id="option-144" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Inglaterra, Bélgica', 'Empate', 47)">
+                                        <span class="mdl-radio__label">Empate</span>
+                                    </label>
+                                </div>
+                                <div class="js-partidos__score">
+                                    <small>0 - 0</small>
+                                </div>
+                                <div class="js-partidos__puntaje">
+                                    <span>10 puntos</span>
+                                </div>
+                            </div>
+                            <div class="js-partidos" id="52">
+                                <div class="js-partidos__fecha">
+                                    <p>11 jul. 2018 - 13:00 Hora Luzhniki Stadium</p>
+                                </div>
+                                <div class="js-partidos__versus">
+                                    <div class="js-partido__versus--flag">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-142">
+                                            <span class="mdl-radio__label">Inglaterra</span>
+                                            <input type="radio" id="option-142" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Inglaterra', '', 47)">
+                                        </label>
+                                        <img src="<?php echo RUTA_IMG?>paises/inglaterra.png">
+                                    </div>
+                                    <p>VS</p>
+                                    <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/belgica.png">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-143">
+                                            <input type="radio" id="option-143" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Bélgica', '', 47)">
+                                            <span class="mdl-radio__label">Bélgica</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="js-partidos__empate">
+                                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-144">
+                                        <input type="radio" id="option-144" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Inglaterra, Bélgica', 'Empate', 47)">
+                                        <span class="mdl-radio__label">Empate</span>
+                                    </label>
+                                </div>
+                                <div class="js-partidos__score">
+                                    <small>0 - 0</small>
+                                </div>
+                                <div class="js-partidos__puntaje">
+                                    <span>10 puntos</span>
+                                </div>
+                            </div>
+                            <div class="title-fase">
+                                <p>Partido por el tercer puesto</p>
+                            </div>
+                            <div class="js-partidos" id="52">
+                                <div class="js-partidos__fecha">
+                                    <p>14 jul. 2018 - 09:00 Hora estadio de San Petersburgo</p>
+                                </div>
+                                <div class="js-partidos__versus">
+                                    <div class="js-partido__versus--flag">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-142">
+                                            <span class="mdl-radio__label">Inglaterra</span>
+                                            <input type="radio" id="option-142" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Inglaterra', '', 47)">
+                                        </label>
+                                        <img src="<?php echo RUTA_IMG?>paises/inglaterra.png">
+                                    </div>
+                                    <p>VS</p>
+                                    <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/belgica.png">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-143">
+                                            <input type="radio" id="option-143" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Bélgica', '', 47)">
+                                            <span class="mdl-radio__label">Bélgica</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="js-partidos__empate">
+                                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-144">
+                                        <input type="radio" id="option-144" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Inglaterra, Bélgica', 'Empate', 47)">
+                                        <span class="mdl-radio__label">Empate</span>
+                                    </label>
+                                </div>
+                                <div class="js-partidos__score">
+                                    <small>0 - 0</small>
+                                </div>
+                                <div class="js-partidos__puntaje">
+                                    <span>10 puntos</span>
+                                </div>
+                            </div>
+                            <div class="title-fase">
+                                <p>Final</p>
+                            </div>
+                            <div class="js-partidos" id="52">
+                                <div class="js-partidos__fecha">
+                                    <p>15 jul. 2018 - 10:00 Hora Luzhniki Stadium</p>
+                                </div>
+                                <div class="js-partidos__versus">
+                                    <div class="js-partido__versus--flag">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-142">
+                                            <span class="mdl-radio__label">Inglaterra</span>
+                                            <input type="radio" id="option-142" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Inglaterra', '', 47)">
+                                        </label>
+                                        <img src="<?php echo RUTA_IMG?>paises/inglaterra.png">
+                                    </div>
+                                    <p>VS</p>
+                                    <div class="js-partido__versus--flag">
+                                        <img src="<?php echo RUTA_IMG?>paises/belgica.png">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-143">
+                                            <input type="radio" id="option-143" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Bélgica', '', 47)">
+                                            <span class="mdl-radio__label">Bélgica</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="js-partidos__empate">
+                                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-144">
+                                        <input type="radio" id="option-144" class="mdl-radio__button" name="options48" value="1" onclick="guardarScore('Inglaterra, Bélgica', 'Empate', 47)">
+                                        <span class="mdl-radio__label">Empate</span>
+                                    </label>
+                                </div>
+                                <div class="js-partidos__score">
+                                    <small>0 - 0</small>
+                                </div>
+                                <div class="js-partidos__puntaje">
+                                    <span>10 puntos</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
