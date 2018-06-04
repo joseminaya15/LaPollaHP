@@ -19,7 +19,7 @@ class Home extends CI_Controller {
 		$html1 = '';
 		$json = file_get_contents($url);
 	    $obj  = json_decode($json);*/
-	    $data['nombre']   = isset($_GET['nombre']) == true ? base64_decode($_GET['nombre']) : '-';
+	    $data['nombre']   = isset($_GET['code']) == true ? base64_decode($_GET['code']) : '-';
 	    $canti 			  = isset($_GET['cantidad']) == true ? base64_decode($_GET['cantidad']) : 1;
 	    $data['cantidad'] = $canti ;
 	    $multi = $canti/5000;
