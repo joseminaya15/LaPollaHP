@@ -22,7 +22,7 @@ class Home extends CI_Controller {
 	    $data['nombre']   = isset($_GET['nombre']) == true ? base64_decode($_GET['nombre']) : '-';
 	    $canti 			  = isset($_GET['acumulado']) == true ? base64_decode($_GET['acumulado']) : 1;
 	    $data['cantidad'] = $canti ;
-	    $multi = $canti/5000;
+	    $multi 			  = $canti/5000;
 	    $data['puntos']   = '0';
 	    $data['multi']    = $multi;
 		$this->load->view('v_home', $data);
@@ -31,12 +31,12 @@ class Home extends CI_Controller {
 		$data['error'] = EXIT_ERROR;
 		$data['msj']   = null;
 		try {
-			$cont = $this->input->post('cont');
-			$cont = $this->input->post('cont');
-			$cont = $this->input->post('cont');
+			$cont   = $this->input->post('cont');
+			$pais   = $this->input->post('pais');
+			$empate = $this->input->post('empate');
 			// $arrayInsert = array('marcador'   => $datos,
-   //                                'Id_lenguaje' => $idIdioma);
-   //          $datoInsert = $this->M_datos->insertarDatos($arrayInsert, 'anotaciones');
+   			//                      'Id_lenguaje' => $idIdioma);
+   			// $datoInsert = $this->M_datos->insertarDatos($arrayInsert, 'anotaciones');
 			$data['error'] = EXIT_SUCCESS;
 		}catch(Exception $e){
 			$data['msj'] = $e->getMessage();
