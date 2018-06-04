@@ -25,7 +25,7 @@
     </head>
     <body>
         <section id="principal">
-            <div id="home" class="js-window">
+            <div id="home">
                 <div class="js-header">
                     <img src="<?php echo RUTA_IMG?>logo/logo_hp.png">
                     <p><?php echo $nombre ?></p>
@@ -2239,7 +2239,11 @@
                 </div>
             </div>
         </section>
-
+        <footer class="section">
+            <div class="js-container">
+                <p>@copy; Copyright 2018 HP Development Company, L.P.</p>
+            </div>
+        </footer>
         <script src="<?php echo RUTA_JS?>jquery-3.2.1.min.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_JS?>jquery-1.11.2.min.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_PLUGINS?>bootstrap/js/bootstrap.min.js?v=<?php echo time();?>"></script>
