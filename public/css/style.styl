@@ -175,6 +175,7 @@ p
 	flexCenter()
 	padding 10px 0
 	border-bottom 1px solid #000000
+	position relative
 	p
 		margin 0
 		line-height 18px
@@ -426,6 +427,7 @@ table
 		margin 15px 0
 		padding 10px 15px
 		border none
+		padding-bottom 25px
 		.js-partidos__fecha
 			max-width 100%
 			padding-bottom 10px
@@ -437,7 +439,17 @@ table
 			padding 5px 0
 		.js-partidos__puntaje
 		.js-partidos__score
-			display none
+			padding 5px 10px
+		.js-partidos__puntaje
+			position absolute
+			bottom 0
+			text-align left
+			right 0
+		.js-partidos__score
+			position absolute
+			left 0
+			bottom 0
+			text-align left
 @media ( max-width: 600px )
 	.js-container
 		align-items center

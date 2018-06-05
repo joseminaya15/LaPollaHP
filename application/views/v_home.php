@@ -37,7 +37,7 @@
                     </div>
                 </div>
                 <div class="js-fondo">
-                    <div class="js-logo"><img src="<?php echo RUTA_IMG?>logo/logo_polla.png"></div>
+                    <div class="js-logo"><img src="<?php echo RUTA_IMG?>logo/logo-polla.png"></div>
                 </div>
                 <div class="js-container p-0 js-container--negative">
                     <div class="js-user">
