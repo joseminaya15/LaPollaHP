@@ -1,5 +1,8 @@
 var cont = 1;
 function guardarScore(pais, empate, id){
+  var fecha = $("#"+id).attr('data-date');
+  console.log(fecha);
+  return;
 	$('#'+id).css('background', '#D0D0D0');
   $("#"+id+" input").each(function (){ 
     $('#'+this.id).prop( "disabled", true);

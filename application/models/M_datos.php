@@ -27,8 +27,15 @@ class M_datos extends  CI_Model{
       return $result;
     }*/
     function getVersus(){
-      $sql = "SELECT c.* 
-                FROM contrincantes c";
+      $sql = "SELECT p.Nombres as pais1, 
+                     P.img as img1, 
+                     pai.Nombres as pais2, 
+                     pai.img AS img2
+                FROM contrincantes c
+          INNER JOIN paises p
+                  ON p.Id = c.id_pais1
+          INNER JOIN paises pai
+                  ON pai.Id = c.id_pais2";
       $result = $this->db->query($sql);
       return $result->result();
     }

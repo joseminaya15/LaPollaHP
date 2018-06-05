@@ -19,8 +19,53 @@ class Home extends CI_Controller {
 		$html1 = '';
 		$json = file_get_contents($url);
 	    $obj  = json_decode($json);*/
+	    $html 			  = '';
+	    $cont 			  = 1;
+	    $cont1 			  = $cont+1;
+	    $cont2 			  = $cont+2;
 	    $data['nombre']   = isset($_GET['nombre']) == true ? base64_decode($_GET['nombre']) : '-';
 	    $canti 			  = isset($_GET['acumulado']) == true ? base64_decode($_GET['acumulado']) : 1;
+	    $session    	  = array('nombre' => $_GET['nombre']);
+        $this->session->set_userdata($session);
+        $datos = $this->M_datos->getVersus();
+        foreach ($datos as $key) {
+        	$html .= '<div class="js-partidos" id="'.$cont.'" data-date="14/06/2018">
+	                        <div class="js-partidos__fecha">
+	                            <p>14 jun. 2018 - 10:00 Hora Local Grupo A</p>
+	                        </div>
+	                        <div class="js-partidos__versus">
+	                            <div class="js-partido__versus--flag">
+	                                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-'.$cont.'">
+	                                    <span class="mdl-radio__label">'.$key->pais1.'</span>
+	                                    <input type="radio" id="option-'.$cont.'" class="mdl-radio__button" name="options'.$cont.'" value="1" onclick="guardarScore("'.$key->pais1.'", "", '.$cont.')">
+	                                </label>
+	                                <img src="'.RUTA_IMG.'paises/'.$key->img1.'.png">
+	                            </div>
+	                            <p>VS</p>
+	                            <div class="js-partido__versus--flag">
+	                                <img src="'.RUTA_IMG.'paises/'.$key->img2.'.png">
+	                                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-'.$cont1.'">
+	                                    <input type="radio" id="option-'.$cont1.'" class="mdl-radio__button" name="options'.$cont.'" value="1" onclick="guardarScore("'.$key->pais2.'", "", '.$cont.')">
+	                                    <span class="mdl-radio__label">'.$key->pais2.'</span>
+	                                </label>
+	                            </div>
+	                        </div>
+	                        <div class="js-partidos__empate">
+	                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-'.$cont2.'">
+	                                <input type="radio" id="option-'.$cont2.'" class="mdl-radio__button" name="options'.$cont.'" value="1" onclick="guardarScore(&#39;'.$key->pais2.', '.$key->pais2.'&#39;, &#39;Empate&#39;, '.$cont.')">
+	                                <span class="mdl-radio__label">Empate</span>
+	                            </label>
+	                        </div>
+	                        <div class="js-partidos__score">
+	                            <small>0 - 0</small>
+	                        </div>
+	                        <div class="js-partidos__puntaje">
+	                            <span>0 puntos</span>
+	                        </div>
+	                    </div>';
+	            $cont++;
+        }
+        $data['html'] = $html;
 	    $data['cantidad'] = $canti ;
 	    $multi 			  = $canti/5000;
 	    $data['puntos']   = '0';
@@ -34,8 +79,11 @@ class Home extends CI_Controller {
 			$cont   = $this->input->post('cont');
 			$pais   = $this->input->post('pais');
 			$empate = $this->input->post('empate');
-			$arrayInsert = array('marcador' => $datos,
-   			                     'id_user'  => $idIdioma);
+			$arrayInsert = array('marcador' 	   => $datos,
+   			                     'name_user'  	   => $this->session->userdata('nombre'),
+   			                 	 'fecha_marcacion' => $fecha_marcacion,
+   			                 	 'puntos'          => $puntos,
+   			                 	 'empate' 		   => $empate);
    			$datoInsert = $this->M_datos->insertarDatos($arrayInsert, 'anotaciones');
 			$data['error'] = EXIT_SUCCESS;
 		}catch(Exception $e){
