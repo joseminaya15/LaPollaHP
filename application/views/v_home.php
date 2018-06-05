@@ -18,7 +18,7 @@
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>bootstrap/css/bootstrap.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>font-awesome.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>material-icons.css?v=<?php echo time();?>">
-        <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>bentonsans.css?v=<?php echo time();?>">
+        <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>hpsimplified.css?v=<?php echo time();?>">
     	<link rel="stylesheet"    href="<?php echo RUTA_CSS?>animate.css?v=<?php echo time();?>">
     	<link rel="stylesheet"    href="<?php echo RUTA_CSS?>m-p.min.css?v=<?php echo time();?>">
     	<link rel="stylesheet"    href="<?php echo RUTA_CSS?>style.css?v=<?php echo time();?>">
@@ -35,28 +35,35 @@
                         <p>Login</p>
                         <p>Factura</p>
                     </div>
-                    <p><?php echo $nombre ?></p>
                 </div>
                 <div class="js-fondo">
                     <div class="js-logo"><img src="<?php echo RUTA_IMG?>logo/logo_polla.png"></div>
                 </div>
-                <div class="js-score">
-                    <div class="js-container">
+                <div class="js-container p-0 js-container--negative">
+                    <div class="js-user">
+                        <p>Hola <?php echo $nombre ?></p>
+                        <a href="">Salir</a>
+                    </div>
+                    <div class="js-score">
                         <div class="js-score__user">
-                        
+                            <p>Monto acumulado facturas<span>$<?php echo $cantidad ?></span></p>
                         </div>
                         <div class="js-score__monto">
-                            
+                            <p><span><?php echo $puntos ?></span> Puntos <span>x<?php echo $multi ?></span> Multiplicador activo</p>
                         </div>
                     </div>
                 </div>
-                <div class="js-container js-container--responsive">
-                    <p>Monto Acumulado de Facturas $<?php echo $cantidad ?></p>
-                    <p><?php echo $puntos ?> puntos</p>
-                    <p>x<?php echo $multi ?></p>
+                <div class="js-link">
+                    <a href="">Ingreso de Factura</a>
+                    <a href="" class="active">Arma tu Score</a>
+                </div>
+                <div class="js-container js-container--title">
+                    <h2>Arma tu Score</h2>
+                </div>
+                <div class="js-container p-t-5">
                     <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="active"><a href="#Fase1" aria-controls="Fase1" role="tab" data-toggle="tab">Fase de Grupos</a></li>
-                        <li role="presentation"><a href="#Fase2" aria-controls="Fase2" role="tab" data-toggle="tab">Fase de Eliminatorias</a></li>
+                        <li><a href="#Fase2" aria-controls="Fase2" role="tab" data-toggle="tab">Fase de Eliminatorias</a></li>
+                        <li class="active"><a href="#Fase1" aria-controls="Fase1" role="tab" data-toggle="tab">Fase de Grupos</a></li>
                     </ul>
                     <div class="tab-content">
                         <div role="tabpanel" class="tab-pane active" id="Fase1">

@@ -1,6 +1,6 @@
-$regular = 'BentonSansRegular'
-$medium  = 'BentonSansMedium'
-$bold    = 'BentonSansBold'
+$light   = 'HPSimplified-Light', sans-serif
+$regular = 'HPSimplified-Regular', sans-serif
+$bold    = 'HPSimplified-Bold', sans-serif
 $color   = #0096D6
 $Tcenter = translate(-50% , -50%)
 flexCenter()
@@ -126,6 +126,7 @@ p
 	background-color $color
 	z-index 5
 	padding 10px 25px
+	color #FFFFFF
 	flexCenter()
 	img
 		width 100%
@@ -135,7 +136,9 @@ p
 		width 100%
 		justify-content flex-start
 		p
-			font-family medium
+			font-family $bold
+			margin-left 10px
+			font-size 16px
 	.js-header--right
 		flexCenter()
 		width 100%
@@ -148,7 +151,7 @@ p
 	left 0
 	bottom 0
 	top 0
-	height 250px
+	height 280px
 	.js-logo
 		flexCenter()
 		justify-content center
@@ -156,6 +159,17 @@ p
 		img
 			position absolute
 			z-index 10
+			top 20px
+.js-link
+	flexCenter()
+	justify-content center
+	a
+		font-family $bold
+		color $color !important
+		padding 5px 15px
+		text-decoration none
+		&.active
+			border-bottom 3px solid $color
 .js-partidos
 	flexCenter()
 	padding 10px 0
@@ -196,6 +210,12 @@ p
 					.mdl-radio__outer-circle
 						right 0
 						left initial
+					.mdl-radio__inner-circle
+						right 4px
+						left inherit
+					.mdl-radio__ripple-container
+						right -13px
+						left inherit
 	.js-partidos__empate
 		width 100%
 		max-width 120px
@@ -211,7 +231,7 @@ p
 		max-width 120px
 		text-align center
 		span
-			font-family $medium
+			font-family $bold
 			font-size 16px			
 .js-fondo__imagen
 	background url(../img/fondo/fondo-imagen.jpg) no-repeat center center
@@ -223,10 +243,22 @@ p
 		opacity .2
 		absolute()
 .js-score
+	background-color #87898B
+	color #FFFFFF
+	flexCenter()
 	.js-score__user
 		flexCenter()
+		width 100%
+		justify-content flex-end
+		padding 15px 20px
+		border-right 2px solid #FFFFFF
 	.js-score__monto
 		flexCenter()
+		width 100%
+		justify-content flex-start
+		padding 15px 20px
+	span
+		font-size 30px
 .js-window
 	absolute()
 	flexCenter()
@@ -242,6 +274,13 @@ p
 	margin auto
 	position relative
 	padding 20px
+.js-container--negative
+	margin -50px auto 20px auto
+.js-container--title
+	padding 10px 0 0 0
+	h2
+		padding 0 30px
+		margin 0
 .js-input
 	margin 5px 0
 	padding 0 5px
@@ -281,7 +320,7 @@ p
 	text-transform initial
 	height 30px
 	line-height 20px
-	font-family $medium
+	font-family $bold
 	max-width 120px
 	width 100%
 	&:hover
@@ -290,28 +329,54 @@ p
 	flexCenter()
 	justify-content flex-end
 	width 100%
+	margin-bottom 5px
 	p
 		margin 0
 		padding 0 10px
 		margin-right 10px
 		border-right 1px solid #FFFFFF
 		line-height 18px
+		color #FFFFFF
 	a
-		font-family $medium
+		font-family $bold
 		cursor pointer
+		color #FFFFFF
 .title-fase
 	background-color #CCCCCC
 	padding 10px
 	margin 40px 0 15px 0
 	p
 		margin 0
-		font-family $medium
+		font-family $bold
 footer
 	background-color #87898B
 	text-align center
 	p
 		color #FFFFFF
 		margin 0
+/*NAV-TABS*/
+.nav-tabs
+	border none
+	&>li
+		float right
+		&>a
+			border 2px solid transparent
+			color $color
+			&:hover
+				border 2px solid transparent	
+				border-bottom 2px solid $color
+				background-color transparent
+		&.active
+			a
+				color $color
+				border 2px solid transparent
+				border-bottom 2px solid $color
+				font-family $bold
+				&:focus
+				&:hover
+					color $color
+					border 2px solid transparent
+					border-bottom 2px solid $color
 /*SCROLL*/
 ::-webkit-scrollbar
 	width 6px
