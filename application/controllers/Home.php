@@ -23,21 +23,32 @@ class Home extends CI_Controller {
 	    $cont 			  = 1;
 	    $data['nombre']   = isset($_GET['nombre']) == true ? base64_decode($_GET['nombre']) : '-';
 	    $canti 			  = isset($_GET['acumulado']) == true ? base64_decode($_GET['acumulado']) : 1;
-	    $session    	  = array('nombre' => $_GET['nombre']);
+	    $session    	  = array('nombre' => base64_decode($_GET['nombre']));
         $this->session->set_userdata($session);
         $datos = $this->M_datos->getVersus();
         foreach ($datos as $key) {
+        	$disabled = '';
+        	$color = '';
+        	$checked = '';
         	$cont1 = $cont+1;
 	    	$cont2 = $cont1+1;
-        	$html .= '<div class="js-partidos" id="'.$cont.'" data-date="'.$key->fecha.'">
+	    	$paises = $this->M_datos->getDatosAnotaciones(base64_decode($_GET['nombre']));
+	    	foreach ($paises as $val) {
+	    		if($val->id_contrin == $key->Id){
+	    			$color = 'style="background-color: #D0D0D0"';
+	    			$disabled = 'disabled';
+	    			$checked = 'checked';
+	    		}
+	    	}
+        	$html .= '<div class="js-partidos" id="'.$cont.'" data-Id="'.$key->Id.'" '.$color.'>
 	                        <div class="js-partidos__fecha">
-	                            <p>'.$key->fecha_juego.' Hora Local Grupo A</p>
+	                            <p>'.$key->fecha_juego.' Hora Local '.$key->grupo.'</p>
 	                        </div>
 	                        <div class="js-partidos__versus">
 	                            <div class="js-partido__versus--flag">
 	                                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-'.$cont.'">
 	                                    <span class="mdl-radio__label">'.$key->pais1.'</span>
-	                                    <input type="radio" id="option-'.$cont.'" class="mdl-radio__button" name="options'.$cont.'" value="1" onclick="guardarScore(&#39;'.$key->pais1.'&#39;, &#39; &#39;, '.$cont.')">
+	                                    <input type="radio" id="option-'.$cont.'" class="mdl-radio__button" '.$checked.' name="options'.$cont.'" value="1" onclick="guardarScore(&#39;'.$key->pais1.'&#39;, &#39; &#39;, '.$cont.')" '.$disabled.'>
 	                                </label>
 	                                <img src="'.RUTA_IMG.'paises/'.$key->img1.'.png">
 	                            </div>
@@ -45,14 +56,14 @@ class Home extends CI_Controller {
 	                            <div class="js-partido__versus--flag">
 	                                <img src="'.RUTA_IMG.'paises/'.$key->img2.'.png">
 	                                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-'.$cont1.'">
-	                                    <input type="radio" id="option-'.$cont1.'" class="mdl-radio__button" name="options'.$cont.'" value="1" onclick="guardarScore(&#39;'.$key->pais2.'&#39;, &#39; &#39;, '.$cont.')">
+	                                    <input type="radio" id="option-'.$cont1.'" class="mdl-radio__button" '.$checked.' name="options'.$cont.'" value="1" onclick="guardarScore(&#39;'.$key->pais2.'&#39;, &#39; &#39;, '.$cont.')" '.$disabled.'>
 	                                    <span class="mdl-radio__label">'.$key->pais2.'</span>
 	                                </label>
 	                            </div>
 	                        </div>
 	                        <div class="js-partidos__empate">
 	                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-'.$cont2.'">
-	                                <input type="radio" id="option-'.$cont2.'" class="mdl-radio__button" name="options'.$cont.'" value="1" onclick="guardarScore(&#39;'.$key->pais2.', '.$key->pais2.'&#39;, &#39;Empate&#39;, '.$cont.')">
+	                                <input type="radio" id="option-'.$cont2.'" class="mdl-radio__button" '.$checked.' name="options'.$cont.'" value="1" onclick="guardarScore(&#39;'.$key->pais2.', '.$key->pais2.'&#39;, &#39;Empate&#39;, '.$cont.')" '.$disabled.'>
 	                                <span class="mdl-radio__label">Empate</span>
 	                            </label>
 	                        </div>
@@ -79,11 +90,13 @@ class Home extends CI_Controller {
 			$cont   = $this->input->post('cont');
 			$pais   = $this->input->post('pais');
 			$empate = $this->input->post('empate');
-			$arrayInsert = array('marcador' 	   => $datos,
+			$Id 	= $this->input->post('Id');
+			$arrayInsert = array('marcador' 	   => $pais,
    			                     'name_user'  	   => $this->session->userdata('nombre'),
-   			                 	 'fecha_marcacion' => $fecha_marcacion,
-   			                 	 'puntos'          => $puntos,
-   			                 	 'empate' 		   => $empate);
+   			                 	 'fecha_marcacion' => date("Y-m-d h:i:sa"),
+   			                 	 'puntos'          => 0,
+   			                 	 'empate' 		   => $empate,
+   			                 	 'id_contrin' 	   => $Id);
    			$datoInsert = $this->M_datos->insertarDatos($arrayInsert, 'anotaciones');
 			$data['error'] = EXIT_SUCCESS;
 		}catch(Exception $e){

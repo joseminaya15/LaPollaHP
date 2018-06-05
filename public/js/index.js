@@ -1,14 +1,20 @@
 var cont = 1;
 function guardarScore(pais, empate, id){
-  var fecha = $("#"+id).attr('data-date');
+  var Id = $("#"+id).attr('data-Id');
 	$('#'+id).css('background', '#D0D0D0');
   $("#"+id+" input").each(function (){ 
     $('#'+this.id).prop( "disabled", true);
   });
-	/*$.ajax({
+  if(empate == ' '){
+    empate = 0;
+  }else {
+    empate = 1;
+  }
+	$.ajax({
 		data : {pais   : pais,
 				    empate : empate,
-            cont   : cont},
+            cont   : cont,
+            Id     : Id},
 		url  : 'Home/guardarScore',
 		type : 'POST'
 	}).done(function(data){
@@ -24,7 +30,7 @@ function guardarScore(pais, empate, id){
       } catch (err){
         msj('error',err.message);
       }
-	});*/
+	});
 }
 function cerrarCesion(){
 	$.ajax({

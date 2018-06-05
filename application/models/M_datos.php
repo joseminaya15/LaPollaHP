@@ -27,12 +27,14 @@ class M_datos extends  CI_Model{
       return $result;
     }*/
     function getVersus(){
-      $sql = "SELECT p.Nombres as pais1, 
+      $sql = "SELECT c.Id,
+                     p.Nombres as pais1, 
                      P.img as img1, 
                      pai.Nombres as pais2, 
                      pai.img AS img2,
                      DATE_FORMAT(c.fecha, '%d/%m/%Y') AS fecha,
-                     DATE_FORMAT(c.fecha, '%d %M, %Y - %H : %i') AS fecha_juego
+                     DATE_FORMAT(c.fecha, '%d %M, %Y - %H : %i') AS fecha_juego,
+                     c.grupo
                 FROM contrincantes c
           INNER JOIN paises p
                   ON p.Id = c.id_pais1
@@ -41,11 +43,11 @@ class M_datos extends  CI_Model{
       $result = $this->db->query($sql);
       return $result->result();
     }
-    function getDatosPaises($id_pais){
-      $sql = "SELECT p.* 
-                FROM paises p
-               WHERE Id = ?";
-      $result = $this->db->query($sql, array($id_pais));
+    function getDatosAnotaciones($name_user){
+      $sql = "SELECT a.* 
+                FROM anotaciones a
+               WHERE a.name_user = ?";
+      $result = $this->db->query($sql, array($name_user));
       return $result->result();
     }
     /*function getIdByNameCate($cate){
