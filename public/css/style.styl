@@ -117,18 +117,45 @@ body
 	background-color #FFFFFF
 .section
 	position relative
+p
+	margin 0
 .js-header
 	position fixed
 	top 0
 	width 100%
 	background-color $color
-	z-index 20
-	padding 15px 25px
-	transitionOpacity()
+	z-index 5
+	padding 10px 25px
 	flexCenter()
 	img
 		width 100%
-		max-width 40px
+		max-width 41px
+	.js-header--left
+		flexCenter()
+		width 100%
+		justify-content flex-start
+		p
+			font-family medium
+	.js-header--right
+		flexCenter()
+		width 100%
+		justify-content flex-end
+.js-fondo
+	background url(../img/fondo/fondo-fase.jpg) no-repeat center center
+	background-size cover
+	position relative
+	right 0
+	left 0
+	bottom 0
+	top 0
+	height 250px
+	.js-logo
+		flexCenter()
+		justify-content center
+		height 100%
+		img
+			position absolute
+			z-index 10
 .js-partidos
 	flexCenter()
 	padding 10px 0
@@ -282,7 +309,7 @@ footer
 		margin 0
 /*SCROLL*/
 ::-webkit-scrollbar
-	width 8px
+	width 6px
 	height 5px
 ::-webkit-scrollbar-track
 	background-color transparent

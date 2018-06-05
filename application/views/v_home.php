@@ -11,7 +11,7 @@
         <meta name="language"               content="es">
         <meta name="theme-color"            content="#0096D6">
     	<title>HP | Incentivo La Polla</title>
-        <link rel="shortcut icon" href="<?php echo RUTA_IMG?>logo/logo_hp.png">
+        <link rel="shortcut icon" href="<?php echo RUTA_IMG?>logo/hp-favicon.ico">
     	<link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>toaster/toastr.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>mdl/material.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>bootstrap-select/css/bootstrap-select.min.css?v=<?php echo time();?>">
@@ -27,10 +27,21 @@
         <section id="principal">
             <div id="home">
                 <div class="js-header">
-                    <img src="<?php echo RUTA_IMG?>logo/logo_hp.png">
+                    <div class="js-header--left">
+                        <img src="<?php echo RUTA_IMG?>logo/hp-logo.png">
+                        <p>Incentivo para canales</p>
+                    </div>
+                    <div class="js-header--right">
+                        <p>Login</p>
+                        <p>Factura</p>
+                    </div>
+
                     <p><?php echo $nombre ?></p>
                 </div>
-                <div class="js-container js-container--responsive" style="margin-top: 100px;">
+                <div class="js-fondo">
+                    <div class="js-logo"><img src="<?php echo RUTA_IMG?>logo/logo_polla.png"></div>
+                </div>
+                <div class="js-container js-container--responsive">
                     <p>Monto Acumulado de Facturas $<?php echo $cantidad ?></p>
                     <p><?php echo $puntos ?> puntos</p>
                     <p>x<?php echo $multi ?></p>
@@ -2179,14 +2190,14 @@
                                     <div class="js-partido__versus--flag">
                                         <img src="<?php echo RUTA_IMG?>paises/belgica.png">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-188">
-                                            <input type="radio" id="option-143" class="mdl-radio__button" name="options63" value="1" onclick="guardarScore('Bélgica', '', 63)">
+                                            <input type="radio" id="option-188" class="mdl-radio__button" name="options63" value="1" onclick="guardarScore('Bélgica', '', 63)">
                                             <span class="mdl-radio__label">Bélgica</span>
                                         </label>
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
-                                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-144">
-                                        <input type="radio" id="option-144" class="mdl-radio__button" name="options63" value="1" onclick="guardarScore('Inglaterra, Bélgica', 'Empate', 63)">
+                                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-189">
+                                        <input type="radio" id="option-189" class="mdl-radio__button" name="options63" value="1" onclick="guardarScore('Inglaterra, Bélgica', 'Empate', 63)">
                                         <span class="mdl-radio__label">Empate</span>
                                     </label>
                                 </div>
@@ -2206,24 +2217,24 @@
                                 </div>
                                 <div class="js-partidos__versus">
                                     <div class="js-partido__versus--flag">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-142">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-190">
                                             <span class="mdl-radio__label">Inglaterra</span>
-                                            <input type="radio" id="option-142" class="mdl-radio__button" name="options64" value="1" onclick="guardarScore('Inglaterra', '', 64)">
+                                            <input type="radio" id="option-190" class="mdl-radio__button" name="options64" value="1" onclick="guardarScore('Inglaterra', '', 64)">
                                         </label>
                                         <img src="<?php echo RUTA_IMG?>paises/inglaterra.png">
                                     </div>
                                     <p>VS</p>
                                     <div class="js-partido__versus--flag">
                                         <img src="<?php echo RUTA_IMG?>paises/belgica.png">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-143">
-                                            <input type="radio" id="option-143" class="mdl-radio__button" name="options64" value="1" onclick="guardarScore('Bélgica', '', 64)">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-191">
+                                            <input type="radio" id="option-191" class="mdl-radio__button" name="options64" value="1" onclick="guardarScore('Bélgica', '', 64)">
                                             <span class="mdl-radio__label">Bélgica</span>
                                         </label>
                                     </div>
                                 </div>
                                 <div class="js-partidos__empate">
-                                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-144">
-                                        <input type="radio" id="option-144" class="mdl-radio__button" name="options64" value="1" onclick="guardarScore('Inglaterra, Bélgica', 'Empate', 64)">
+                                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-192">
+                                        <input type="radio" id="option-192" class="mdl-radio__button" name="options64" value="1" onclick="guardarScore('Inglaterra, Bélgica', 'Empate', 64)">
                                         <span class="mdl-radio__label">Empate</span>
                                     </label>
                                 </div>
