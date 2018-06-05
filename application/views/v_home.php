@@ -53,7 +53,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="js-container js-container--responsive">
+                <div class="js-link">
+                    <a href="">Ingreso de Factura</a>
+                    <a href="" class="active">Arma tu Score</a>
+                </div>
+                <div class="js-container js-container--title">
+                    <h2>Arma tu Score</h2>
+                </div>
+                <div class="js-container p-t-5">
                     <ul class="nav nav-tabs" role="tablist">
                         <li><a href="#Fase2" aria-controls="Fase2" role="tab" data-toggle="tab">Fase de Eliminatorias</a></li>
                         <li class="active"><a href="#Fase1" aria-controls="Fase1" role="tab" data-toggle="tab">Fase de Grupos</a></li>

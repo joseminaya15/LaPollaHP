@@ -160,6 +160,16 @@ p
 			position absolute
 			z-index 10
 			top 20px
+.js-link
+	flexCenter()
+	justify-content center
+	a
+		font-family $bold
+		color $color !important
+		padding 5px 15px
+		text-decoration none
+		&.active
+			border-bottom 3px solid $color
 .js-partidos
 	flexCenter()
 	padding 10px 0
@@ -266,6 +276,11 @@ p
 	padding 20px
 .js-container--negative
 	margin -50px auto 20px auto
+.js-container--title
+	padding 10px 0 0 0
+	h2
+		padding 0 30px
+		margin 0
 .js-input
 	margin 5px 0
 	padding 0 5px
