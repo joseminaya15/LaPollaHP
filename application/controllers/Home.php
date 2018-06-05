@@ -21,23 +21,23 @@ class Home extends CI_Controller {
 	    $obj  = json_decode($json);*/
 	    $html 			  = '';
 	    $cont 			  = 1;
-	    $cont1 			  = $cont+1;
-	    $cont2 			  = $cont+2;
 	    $data['nombre']   = isset($_GET['nombre']) == true ? base64_decode($_GET['nombre']) : '-';
 	    $canti 			  = isset($_GET['acumulado']) == true ? base64_decode($_GET['acumulado']) : 1;
 	    $session    	  = array('nombre' => $_GET['nombre']);
         $this->session->set_userdata($session);
         $datos = $this->M_datos->getVersus();
         foreach ($datos as $key) {
-        	$html .= '<div class="js-partidos" id="'.$cont.'" data-date="14/06/2018">
+        	$cont1 = $cont+1;
+	    	$cont2 = $cont1+1;
+        	$html .= '<div class="js-partidos" id="'.$cont.'" data-date="'.$key->fecha.'">
 	                        <div class="js-partidos__fecha">
-	                            <p>14 jun. 2018 - 10:00 Hora Local Grupo A</p>
+	                            <p>'.$key->fecha_juego.' Hora Local Grupo A</p>
 	                        </div>
 	                        <div class="js-partidos__versus">
 	                            <div class="js-partido__versus--flag">
 	                                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-'.$cont.'">
 	                                    <span class="mdl-radio__label">'.$key->pais1.'</span>
-	                                    <input type="radio" id="option-'.$cont.'" class="mdl-radio__button" name="options'.$cont.'" value="1" onclick="guardarScore("'.$key->pais1.'", "", '.$cont.')">
+	                                    <input type="radio" id="option-'.$cont.'" class="mdl-radio__button" name="options'.$cont.'" value="1" onclick="guardarScore(&#39;'.$key->pais1.'&#39;, &#39; &#39;, '.$cont.')">
 	                                </label>
 	                                <img src="'.RUTA_IMG.'paises/'.$key->img1.'.png">
 	                            </div>
@@ -45,7 +45,7 @@ class Home extends CI_Controller {
 	                            <div class="js-partido__versus--flag">
 	                                <img src="'.RUTA_IMG.'paises/'.$key->img2.'.png">
 	                                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-'.$cont1.'">
-	                                    <input type="radio" id="option-'.$cont1.'" class="mdl-radio__button" name="options'.$cont.'" value="1" onclick="guardarScore("'.$key->pais2.'", "", '.$cont.')">
+	                                    <input type="radio" id="option-'.$cont1.'" class="mdl-radio__button" name="options'.$cont.'" value="1" onclick="guardarScore(&#39;'.$key->pais2.'&#39;, &#39; &#39;, '.$cont.')">
 	                                    <span class="mdl-radio__label">'.$key->pais2.'</span>
 	                                </label>
 	                            </div>
@@ -63,7 +63,7 @@ class Home extends CI_Controller {
 	                            <span>0 puntos</span>
 	                        </div>
 	                    </div>';
-	            $cont++;
+	            $cont = $cont2+1;
         }
         $data['html'] = $html;
 	    $data['cantidad'] = $canti ;

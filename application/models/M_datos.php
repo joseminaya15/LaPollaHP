@@ -30,7 +30,9 @@ class M_datos extends  CI_Model{
       $sql = "SELECT p.Nombres as pais1, 
                      P.img as img1, 
                      pai.Nombres as pais2, 
-                     pai.img AS img2
+                     pai.img AS img2,
+                     DATE_FORMAT(c.fecha, '%d/%m/%Y') AS fecha,
+                     DATE_FORMAT(c.fecha, '%d %M, %Y - %H : %i') AS fecha_juego
                 FROM contrincantes c
           INNER JOIN paises p
                   ON p.Id = c.id_pais1
