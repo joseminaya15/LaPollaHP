@@ -41,7 +41,14 @@
                     <div class="js-logo"><img src="<?php echo RUTA_IMG?>logo/logo_polla.png"></div>
                 </div>
                 <div class="js-score">
-                    
+                    <div class="js-container">
+                        <div class="js-score__user">
+                        
+                        </div>
+                        <div class="js-score__monto">
+                            
+                        </div>
+                    </div>
                 </div>
                 <div class="js-container js-container--responsive">
                     <p>Monto Acumulado de Facturas $<?php echo $cantidad ?></p>
