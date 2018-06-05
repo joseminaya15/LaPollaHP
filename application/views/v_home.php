@@ -39,8 +39,8 @@
                 <div class="js-fondo">
                     <div class="js-logo"><img src="<?php echo RUTA_IMG?>logo/logo_polla.png"></div>
                 </div>
-                <div class="js-container p-0">
-                    <div class="">
+                <div class="js-container p-0 js-container--negative">
+                    <div class="js-user">
                         <p>Hola <?php echo $nombre ?></p>
                         <a href="">Salir</a>
                     </div>
