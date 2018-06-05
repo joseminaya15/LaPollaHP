@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'HPSimplified-Light';
+  src: url('HPSimplified/HPSimplified_Lt.ttf');
+  font-weight: 100;
+}
+@font-face {
+  font-family: 'HPSimplified-Regular';
+  src: url('HPSimplified/HPSimplified_Rg.ttf');
+  font-weight: 100;
+}
+@font-face {
+  font-family: 'HPSimplified-Bold';
+  src: url('HPSimplified/HPSimplified_Bd.ttf');
+  font-weight: 100;
+}

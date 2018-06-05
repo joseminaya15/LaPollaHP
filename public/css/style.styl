@@ -1,6 +1,6 @@
-$regular = 'BentonSansRegular'
-$medium  = 'BentonSansMedium'
-$bold    = 'BentonSansBold'
+$light   = 'HPSimplified-Light', sans-serif
+$regular = 'HPSimplified-Regular', sans-serif
+$bold    = 'HPSimplified-Bold', sans-serif
 $color   = #0096D6
 $Tcenter = translate(-50% , -50%)
 flexCenter()
@@ -135,7 +135,7 @@ p
 		width 100%
 		justify-content flex-start
 		p
-			font-family medium
+			font-family $bold
 	.js-header--right
 		flexCenter()
 		width 100%
@@ -217,7 +217,7 @@ p
 		max-width 120px
 		text-align center
 		span
-			font-family $medium
+			font-family $bold
 			font-size 16px			
 .js-fondo__imagen
 	background url(../img/fondo/fondo-imagen.jpg) no-repeat center center
@@ -241,6 +241,8 @@ p
 		flexCenter()
 		width 100%
 		justify-content flex-start
+	span
+		font-size 30px
 .js-window
 	absolute()
 	flexCenter()
@@ -295,7 +297,7 @@ p
 	text-transform initial
 	height 30px
 	line-height 20px
-	font-family $medium
+	font-family $bold
 	max-width 120px
 	width 100%
 	&:hover
@@ -311,7 +313,7 @@ p
 		border-right 1px solid #FFFFFF
 		line-height 18px
 	a
-		font-family $medium
+		font-family $bold
 		cursor pointer
 .title-fase
 	background-color #CCCCCC
@@ -319,7 +321,7 @@ p
 	margin 40px 0 15px 0
 	p
 		margin 0
-		font-family $medium
+		font-family $bold
 footer
 	background-color #87898B
 	text-align center
