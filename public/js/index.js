@@ -1,10 +1,6 @@
 var cont = 1;
 function guardarScore(pais, empate, id){
   var fecha = $("#"+id).attr('data-date');
-	$('#'+id).css('background', '#D0D0D0');
-  $("#"+id+" input").each(function (){ 
-    $('#'+this.id).prop( "disabled", true);
-  });
 	/*$.ajax({
 		data : {pais   : pais,
 				    empate : empate,
@@ -42,4 +38,19 @@ function cerrarCesion(){
         msj('error',err.message);
       }
 	});
+}
+var modal     = $('#ModalConfirmar');
+var bgcolor   = null;
+function openModalConfirmar(id){
+  var idCheck = $('#'+id);
+  var pais    = idCheck.siblings('.mdl-radio__label').text();
+  modal.find('.mdl-card__supporting-text').find('h2').text(pais);
+  modal.modal('show');
+  bgcolor = id;
+}
+function confirmarPartido(){
+  var idPartido = $('#'+bgcolor)
+  var partido   = idPartido.parents('.js-partidos');
+  partido.addClass('js-bgcolor');
+  modal.modal('hide');
 }

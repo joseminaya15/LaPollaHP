@@ -173,12 +173,16 @@ p
 			border-bottom 3px solid $color
 .js-partidos
 	flexCenter()
+	transitionBgColor()
 	padding 10px 0
 	border-bottom 1px solid #000000
 	position relative
 	p
 		margin 0
 		line-height 18px
+	&.js-bgcolor
+		background-color #BDBDBD
+		pointer-events: none
 	.js-partidos__fecha
 		width 100%
 		max-width 200px
@@ -420,6 +424,28 @@ table
 				opacity 1
 				scale()
 				transform()
+/*MATERIAL DESIGN*/
+.mdl-card
+	width 100%
+	.mdl-card__title
+		display block
+		h2
+			color #757575
+			margin 0
+	.mdl-card__supporting-text
+		width 100%
+		h2
+			margin 20px 0
+			text-align center
+			color #000000
+		small
+			font-size 16px
+			line-height 16px
+	.mdl-card__actions
+		text-align right
+		padding 16px
+		button
+			margin 5px
 @media ( max-width: 768px )
 	.js-partidos
 		flex-wrap wrap
