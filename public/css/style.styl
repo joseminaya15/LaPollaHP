@@ -419,8 +419,34 @@ table
 				opacity 1
 				scale()
 				transform()
+@media ( max-width: 768px )
+	.js-partidos
+		flex-wrap wrap
+		box-shadow 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+		margin 15px 0
+		padding 10px 15px
+		border none
+		.js-partidos__fecha
+			max-width 100%
+			padding-bottom 10px
+			text-align center
+		.js-partidos__versus
+			max-width 100%
+		.js-partidos__empate
+			max-width 100%
+			padding 5px 0
+		.js-partidos__puntaje
+		.js-partidos__score
+			display none
 @media ( max-width: 600px )
 	.js-container
 		align-items center
-			
+@media ( max-width: 480px )
+	.js-partidos
+		.js-partidos__versus 
+			.js-partido__versus--flag
+				padding 0 5px
+		.mdl-radio__label
+			font-size 14px
+			line-height 16px !important	
 					
