@@ -48,7 +48,7 @@ class Home extends CI_Controller {
 	                            <div class="js-partido__versus--flag">
 	                                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-'.$cont.'">
 	                                    <span class="mdl-radio__label">'.$key->pais1.'</span>
-	                                    <input type="radio" id="option-'.$cont.'" class="mdl-radio__button" '.$checked.' name="options'.$cont.'" value="1" onclick="guardarScore(&#39;'.$key->pais1.'&#39;, &#39; &#39;, '.$cont.')" '.$disabled.'>
+	                                    <input type="radio" id="option-'.$cont.'" class="mdl-radio__button" '.$checked.' name="options'.$cont.'" value="1" onchange="openModalConfirmar(this.id)" onclick="guardarScore(&#39;'.$key->pais1.'&#39;, &#39; &#39;, '.$cont.')" '.$disabled.'>
 	                                </label>
 	                                <img src="'.RUTA_IMG.'paises/'.$key->img1.'.png">
 	                            </div>
@@ -56,14 +56,14 @@ class Home extends CI_Controller {
 	                            <div class="js-partido__versus--flag">
 	                                <img src="'.RUTA_IMG.'paises/'.$key->img2.'.png">
 	                                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-'.$cont1.'">
-	                                    <input type="radio" id="option-'.$cont1.'" class="mdl-radio__button" '.$checked.' name="options'.$cont.'" value="1" onclick="guardarScore(&#39;'.$key->pais2.'&#39;, &#39; &#39;, '.$cont.')" '.$disabled.'>
+	                                    <input type="radio" id="option-'.$cont1.'" class="mdl-radio__button" '.$checked.' name="options'.$cont.'" value="1" onchange="openModalConfirmar(this.id)" onclick="guardarScore(&#39;'.$key->pais2.'&#39;, &#39; &#39;, '.$cont.')" '.$disabled.'>
 	                                    <span class="mdl-radio__label">'.$key->pais2.'</span>
 	                                </label>
 	                            </div>
 	                        </div>
 	                        <div class="js-partidos__empate">
 	                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-'.$cont2.'">
-	                                <input type="radio" id="option-'.$cont2.'" class="mdl-radio__button" '.$checked.' name="options'.$cont.'" value="1" onclick="guardarScore(&#39;'.$key->pais2.', '.$key->pais2.'&#39;, &#39;Empate&#39;, '.$cont.')" '.$disabled.'>
+	                                <input type="radio" id="option-'.$cont2.'" class="mdl-radio__button" name="options'.$cont.'" '.$checked.' value="1" onchange="openModalConfirmar(this.id)" onclick="guardarScore(&#39;'.$key->pais2.', '.$key->pais2.'&#39;, &#39;Empate&#39;, '.$cont.')" '.$disabled.'>
 	                                <span class="mdl-radio__label">Empate</span>
 	                            </label>
 	                        </div>

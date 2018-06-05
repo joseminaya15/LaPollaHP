@@ -49,3 +49,18 @@ function cerrarCesion(){
       }
 	});
 }
+var modal     = $('#ModalConfirmar');
+var bgcolor   = null;
+function openModalConfirmar(id){
+  var idCheck = $('#'+id);
+  var pais    = idCheck.siblings('.mdl-radio__label').text();
+  modal.find('.mdl-card__supporting-text').find('h2').text(pais);
+  modal.modal('show');
+  bgcolor = id;
+}
+function confirmarPartido(){
+  var idPartido = $('#'+bgcolor)
+  var partido   = idPartido.parents('.js-partidos');
+  partido.addClass('js-bgcolor');
+  modal.modal('hide');
+}
