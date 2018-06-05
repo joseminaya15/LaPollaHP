@@ -34,8 +34,8 @@ class Home extends CI_Controller {
 			$cont   = $this->input->post('cont');
 			$pais   = $this->input->post('pais');
 			$empate = $this->input->post('empate');
-			$arrayInsert = array('marcador'   => $datos,
-   			                     'id_user' => $idIdioma);
+			$arrayInsert = array('marcador' => $datos,
+   			                     'id_user'  => $idIdioma);
    			$datoInsert = $this->M_datos->insertarDatos($arrayInsert, 'anotaciones');
 			$data['error'] = EXIT_SUCCESS;
 		}catch(Exception $e){
