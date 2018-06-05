@@ -139,6 +139,7 @@ p
 			font-family $bold
 			margin-left 10px
 			font-size 16px
+			line-height 16px
 	.js-header--right
 		flexCenter()
 		width 100%
@@ -204,6 +205,10 @@ p
 				padding 0 10px
 			.mdl-radio
 				font-weight 100
+				flexCenter()
+				.mdl-radio__label
+					line-height 18px
+					text-align left
 				&.js-right
 					padding-left 0
 					padding-right 24px
@@ -216,6 +221,8 @@ p
 					.mdl-radio__ripple-container
 						right -13px
 						left inherit
+					.mdl-radio__label
+						text-align right
 	.js-partidos__empate
 		width 100%
 		max-width 120px
@@ -228,7 +235,7 @@ p
 			font-size 16px
 	.js-partidos__puntaje
 		width 100%
-		max-width 120px
+		max-width 95px
 		text-align center
 		span
 			font-family $bold
