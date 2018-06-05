@@ -60,6 +60,9 @@
                     </ul>
                     <div class="tab-content">
                         <div role="tabpanel" class="tab-pane active" id="Fase1">
+                            <div class="title-fase">
+                                <p>Fase de grupos</p>
+                            </div>
                             <div class="js-partidos" id="1" data-date="14/06/2018">
                                 <div class="js-partidos__fecha">
                                     <p>14 jun. 2018 - 10:00 Hora Local Grupo A</p>
