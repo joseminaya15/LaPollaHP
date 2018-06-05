@@ -67,6 +67,9 @@
                     </ul>
                     <div class="tab-content">
                         <div role="tabpanel" class="tab-pane active" id="Fase1">
+                            <div class="title-fase">
+                                <p>Fase de grupos</p>
+                            </div>
                             <?php echo $html ?>
                         </div>
                         <div role="tabpanel" class="tab-pane" id="Fase2">
