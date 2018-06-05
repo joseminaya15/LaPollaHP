@@ -35,25 +35,25 @@
                         <p>Login</p>
                         <p>Factura</p>
                     </div>
-                    <p><?php echo $nombre ?></p>
                 </div>
                 <div class="js-fondo">
                     <div class="js-logo"><img src="<?php echo RUTA_IMG?>logo/logo_polla.png"></div>
                 </div>
-                <div class="js-score">
-                    <div class="js-container">
+                <div class="js-container p-0">
+                    <div class="">
+                        <p>Hola <?php echo $nombre ?></p>
+                        <a href="">Salir</a>
+                    </div>
+                    <div class="js-score">
                         <div class="js-score__user">
-                        
+                            <p>Monto acumulado facturas<span>$<?php echo $cantidad ?></span></p>
                         </div>
                         <div class="js-score__monto">
-                            
+                            <p><span><?php echo $puntos ?></span> Puntos <span>x<?php echo $multi ?></span> Multiplicador activo</p>
                         </div>
                     </div>
                 </div>
                 <div class="js-container js-container--responsive">
-                    <p>Monto Acumulado de Facturas $<?php echo $cantidad ?></p>
-                    <p><?php echo $puntos ?> puntos</p>
-                    <p>x<?php echo $multi ?></p>
                     <ul class="nav nav-tabs" role="tablist">
                         <li role="presentation" class="active"><a href="#Fase1" aria-controls="Fase1" role="tab" data-toggle="tab">Fase de Grupos</a></li>
                         <li role="presentation"><a href="#Fase2" aria-controls="Fase2" role="tab" data-toggle="tab">Fase de Eliminatorias</a></li>
