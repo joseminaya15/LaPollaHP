@@ -336,6 +336,29 @@ footer
 	p
 		color #FFFFFF
 		margin 0
+/*NAV-TABS*/
+.nav-tabs
+	border none
+	&>li
+		float right
+		&>a
+			border 2px solid transparent
+			color $color
+			&:hover
+				border 2px solid transparent	
+				border-bottom 2px solid $color
+				background-color transparent
+		&.active
+			a
+				color $color
+				border 2px solid transparent
+				border-bottom 2px solid $color
+				font-family $bold
+				&:focus
+				&:hover
+					color $color
+					border 2px solid transparent
+					border-bottom 2px solid $color
 /*SCROLL*/
 ::-webkit-scrollbar
 	width 6px
