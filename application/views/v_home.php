@@ -35,11 +35,13 @@
                         <p>Login</p>
                         <p>Factura</p>
                     </div>
-
                     <p><?php echo $nombre ?></p>
                 </div>
                 <div class="js-fondo">
                     <div class="js-logo"><img src="<?php echo RUTA_IMG?>logo/logo_polla.png"></div>
+                </div>
+                <div class="js-score">
+                    
                 </div>
                 <div class="js-container js-container--responsive">
                     <p>Monto Acumulado de Facturas $<?php echo $cantidad ?></p>
@@ -51,7 +53,7 @@
                     </ul>
                     <div class="tab-content">
                         <div role="tabpanel" class="tab-pane active" id="Fase1">
-                            <div class="js-partidos" id="1">
+                            <div class="js-partidos" id="1" data-date="14/06/2018">
                                 <div class="js-partidos__fecha">
                                     <p>14 jun. 2018 - 10:00 Hora Local Grupo A</p>
                                 </div>
@@ -85,7 +87,7 @@
                                     <span>10 puntos</span>
                                 </div>
                             </div>
-                            <div class="js-partidos" id="2">
+                            <div class="js-partidos" id="2" data-date="15/06/2018">
                                 <div class="js-partidos__fecha">
                                     <p>15 jun. 2018 - 07:00 Hora Local Grupo A</p>
                                 </div>
@@ -119,7 +121,7 @@
                                     <span>10 puntos</span>
                                 </div>
                             </div>
-                            <div class="js-partidos" id="3">
+                            <div class="js-partidos" id="3" data-date="15/06/2018">
                                 <div class="js-partidos__fecha">
                                     <p>15 jun. 2018 - 10:00 Hora Local Grupo B</p>
                                 </div>
@@ -153,7 +155,7 @@
                                     <span>10 puntos</span>
                                 </div>
                             </div>
-                            <div class="js-partidos" id="4">
+                            <div class="js-partidos" id="4" data-date="15/06/2018">
                                 <div class="js-partidos__fecha">
                                     <p>15 jun. 2018 - 13:00 Hora Local Grupo B</p>
                                 </div>
@@ -187,7 +189,7 @@
                                     <span>10 puntos</span>
                                 </div>
                             </div>
-                            <div class="js-partidos" id="5">
+                            <div class="js-partidos" id="5" data-date="16/06/2018">
                                 <div class="js-partidos__fecha">
                                     <p>16 jun. 2018 - 05:00 Hora Local Grupo B</p>
                                 </div>
@@ -221,7 +223,7 @@
                                     <span>10 puntos</span>
                                 </div>
                             </div>
-                            <div class="js-partidos" id="6">
+                            <div class="js-partidos" id="6" data-date="16/06/2018">
                                 <div class="js-partidos__fecha">
                                     <p>16 jun. 2018 - 08:00 Hora Local Grupo B</p>
                                 </div>
@@ -255,7 +257,7 @@
                                     <span>10 puntos</span>
                                 </div>
                             </div>
-                            <div class="js-partidos" id="7">
+                            <div class="js-partidos" id="7" data-date="16/06/2018">
                                 <div class="js-partidos__fecha">
                                     <p>16 jun. 2018 - 11:00 Hora Local Grupo B</p>
                                 </div>
@@ -289,7 +291,7 @@
                                     <span>10 puntos</span>
                                 </div>
                             </div>
-                            <div class="js-partidos" id="8">
+                            <div class="js-partidos" id="8" data-date="16/06/2018">
                                 <div class="js-partidos__fecha">
                                     <p>16 jun. 2018 - 14:00 Hora Local Grupo B</p>
                                 </div>
@@ -323,7 +325,7 @@
                                     <span>10 puntos</span>
                                 </div>
                             </div>
-                            <div class="js-partidos" id="9">
+                            <div class="js-partidos" id="9" data-date="17/06/2018">
                                 <div class="js-partidos__fecha">
                                     <p>17 jun. 2018 - 07:00 Hora Local Grupo B</p>
                                 </div>
@@ -357,7 +359,7 @@
                                     <span>10 puntos</span>
                                 </div>
                             </div>
-                            <div class="js-partidos" id="10">
+                            <div class="js-partidos" id="10" data-date="17/06/2018">
                                 <div class="js-partidos__fecha">
                                     <p>17 jun. 2018 - 10:00 Hora Local Grupo B</p>
                                 </div>
@@ -391,7 +393,7 @@
                                     <span>10 puntos</span>
                                 </div>
                             </div>
-                            <div class="js-partidos" id="11">
+                            <div class="js-partidos" id="11" data-date="17/06/2018">
                                 <div class="js-partidos__fecha">
                                     <p>17 jun. 2018 - 13:00 Hora Local Grupo B</p>
                                 </div>
@@ -425,7 +427,7 @@
                                     <span>10 puntos</span>
                                 </div>
                             </div>
-                            <div class="js-partidos" id="12">
+                            <div class="js-partidos" id="12" data-date="18/06/2018">
                                 <div class="js-partidos__fecha">
                                     <p>18 jun. 2018 - 07:00 Hora Local Grupo F</p>
                                 </div>
@@ -459,7 +461,7 @@
                                     <span>10 puntos</span>
                                 </div>
                             </div>
-                            <div class="js-partidos" id="13">
+                            <div class="js-partidos" id="13" data-date="18/06/2018">
                                 <div class="js-partidos__fecha">
                                     <p>18 jun. 2018 - 10:00 Hora Local Grupo G</p>
                                 </div>
@@ -493,7 +495,7 @@
                                     <span>10 puntos</span>
                                 </div>
                             </div>
-                            <div class="js-partidos" id="14">
+                            <div class="js-partidos" id="14" data-date="18/06/2018">
                                 <div class="js-partidos__fecha">
                                     <p>18 jun. 2018 - 13:00 Hora Local Grupo G</p>
                                 </div>
@@ -527,7 +529,7 @@
                                     <span>10 puntos</span>
                                 </div>
                             </div>
-                            <div class="js-partidos" id="15">
+                            <div class="js-partidos" id="15" data-date="19/06/2018">
                                 <div class="js-partidos__fecha">
                                     <p>19 jun. 2018 - 07:00 Hora Local Grupo H</p>
                                 </div>
@@ -561,7 +563,7 @@
                                     <span>10 puntos</span>
                                 </div>
                             </div>
-                            <div class="js-partidos" id="16">
+                            <div class="js-partidos" id="16" data-date="19/06/2018">
                                 <div class="js-partidos__fecha">
                                     <p>19 jun. 2018 - 10:00 Hora Local Grupo H</p>
                                 </div>
@@ -595,7 +597,7 @@
                                     <span>10 puntos</span>
                                 </div>
                             </div>
-                            <div class="js-partidos" id="17">
+                            <div class="js-partidos" id="17" data-date="19/06/2018">
                                 <div class="js-partidos__fecha">
                                     <p>19 jun. 2018 - 13:00 Hora Local Grupo A</p>
                                 </div>
@@ -629,7 +631,7 @@
                                     <span>10 puntos</span>
                                 </div>
                             </div>
-                            <div class="js-partidos" id="18">
+                            <div class="js-partidos" id="18" data-date="20/06/2018">
                                 <div class="js-partidos__fecha">
                                     <p>20 jun. 2018 - 07:00 Hora Local Grupo B</p>
                                 </div>
@@ -663,7 +665,7 @@
                                     <span>10 puntos</span>
                                 </div>
                             </div>
-                            <div class="js-partidos" id="19">
+                            <div class="js-partidos" id="19" data-date="20/06/2018">
                                 <div class="js-partidos__fecha">
                                     <p>20 jun. 2018 - 10:00 Hora Local Grupo A</p>
                                 </div>
@@ -697,7 +699,7 @@
                                     <span>10 puntos</span>
                                 </div>
                             </div>
-                            <div class="js-partidos" id="20">
+                            <div class="js-partidos" id="20" data-date="20/06/2018">
                                 <div class="js-partidos__fecha">
                                     <p>20 jun. 2018 - 13:00 Hora Local Grupo B</p>
                                 </div>
@@ -731,7 +733,7 @@
                                     <span>10 puntos</span>
                                 </div>
                             </div>
-                            <div class="js-partidos" id="21">
+                            <div class="js-partidos" id="21" data-date="21/06/2018">
                                 <div class="js-partidos__fecha">
                                     <p>21 jun. 2018 - 07:00 Hora Local Grupo C</p>
                                 </div>
