@@ -150,7 +150,7 @@ class Home extends CI_Controller {
 		    $hora1 			  = '';
 		    $fecha 			  = date("d/m/Y");
 		    $hora 			  = date("h:i");
-		    $cont 			  = 50;
+		    $cont 			  = 150;
 		    $i 				  = 0;
 	        $datos = $this->M_datos->getEliminatorias();
 	        foreach ($datos as $key) {
