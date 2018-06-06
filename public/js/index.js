@@ -1,16 +1,17 @@
 var cont = 1;
-function guardarScore(pais, empate, id){
-  var Id = $("#"+id).attr('data-Id');
-  if(empate == ' '){
+function guardarScore(/*pais, empate, id*/){
+  //var Id = $("#"+id).attr('data-Id');
+  var empate = null;
+  if(pais_glob != 'Empate'){
     empate = 0;
   }else {
     empate = 1;
   }
-	/*$.ajax({
-		data : {pais   : pais,
+	$.ajax({
+		data : {pais   : pais_glob,
 				    empate : empate,
             cont   : cont,
-            Id     : Id},
+            Id     : dataId_glob},
 		url  : 'Home/guardarScore',
 		type : 'POST'
 	}).done(function(data){
@@ -26,7 +27,7 @@ function guardarScore(pais, empate, id){
       } catch (err){
         msj('error',err.message);
       }
-	});*/
+	});
 }
 function cerrarCesion(){
 	$.ajax({
@@ -48,6 +49,8 @@ function cerrarCesion(){
 var modal     = $('#ModalConfirmar');
 var bgcolor   = null;
 var idpartido = null;
+var pais_glob = null;
+var dataId_glob   = null;
 function openModalConfirmar(id){
   var idCheck = $('#'+id);
   var pais    = idCheck.siblings('.mdl-radio__label').text();
@@ -57,10 +60,12 @@ function openModalConfirmar(id){
   modal.modal('show');
   bgcolor = id;
   idpartido = partido;
-  console.log(pais);
+  pais_glob = pais;
+  dataId_glob = dataId;
+  /*console.log(pais);
   console.log(bgcolor);
   console.log(partido);
-  console.log(dataId);
+  console.log(dataId);*/
 }
 function confirmarPartido(){
   $('#'+idpartido).addClass('js-bgcolor');

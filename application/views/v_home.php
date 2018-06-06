@@ -654,7 +654,7 @@
                             <small>Recuerda: Al confirmar no podr&aacute;s volver a marcar este partido.</small>
                         </div>
                         <div class="mdl-card__actions">
-                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="confirmarPartido()">Confirmar</button>
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="confirmarPartido();guardarScore()">Confirmar</button>
                             <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" data-dismiss="modal">Cancelar</button>
                         </div>
                     </div>
