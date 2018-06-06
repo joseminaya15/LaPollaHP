@@ -156,11 +156,35 @@ p
 	.js-logo
 		flexCenter()
 		justify-content center
-		height 100%
 		img
-			position absolute
+			position relative
 			z-index 10
-			top 20px
+			top -20px
+	&.concurso
+		background url(../img/fondo/fondo-login.jpg) no-repeat center center
+		background-size cover
+		height 800px
+		margin-top 60px
+		color #FFFFFF
+		text-align center
+		.js-contenido--concurso
+			margin 25px 0
+			p
+				font-size 30px
+				line-height 32px
+				text-shadow 2px 2px 7px rgba(0, 0, 0, 0.54)
+			img
+				margin-top 20px
+				width 100%
+				max-width 800px
+		.js-contenido--ganadores
+			max-width 500px
+			margin auto
+			p
+				font-size 30px
+				line-height 32px
+				span
+					font-family $bold
 .js-link
 	flexCenter()
 	justify-content center
@@ -360,6 +384,103 @@ p
 	p
 		margin 0
 		font-family $bold
+.js-facturas
+	text-align center
+	padding 30px 0
+	h2
+		margin 0
+		font-size 40px
+		line-height 36px
+	a
+		background-color #D7410B !important
+		text-transform initial
+		color #FFFFFF
+		font-family $bold
+		font-size 22px
+		margin-top 20px
+		text-decoration none
+#participantes
+	background-color #02B1E0
+	color #FFFFFF
+	text-align center
+	.js-contenido--participantes
+		max-width 600px
+		margin auto
+		h2
+			font-size 40px
+			line-height 36px
+			margin 20px 0
+		p
+			font-size 18px
+			line-height 22px
+	img
+		width 100%
+		max-width 900px
+		margin 20px 0
+#mecanica
+	text-align center
+	h2
+		font-size 40px
+		margin 20px 0
+	.js-mecanica
+		flexCenter()
+		justify-content center
+		flex-wrap wrap
+		.js-mecanica--contenido
+			width 100%
+			max-width 200px
+			margin 25px 30px
+			border 1px solid $color
+			text-align center
+			padding 20px
+			height 200px
+			border-radius 50%
+			position relative
+			.js-pelota
+				position absolute
+				bottom -15px
+				left 0
+				right 0
+				text-align center
+			h2
+				margin 10px 0
+				font-size 30px
+			p
+				line-height 20px
+				span
+					font-family $bold
+			a
+				background-color $color !important
+				color #FFFFFF
+				font-family $bold
+				height 28px
+				line-height 28px
+				text-transform initial
+				margin-top 10px
+				text-decoration none
+				border-radius 5px
+#terminos
+	background url(../img/fondo/fondo-terminos.jpg) no-repeat center center
+	background-size cover
+	height 320px
+	text-align center
+	color #FFFFFF
+	h2
+		font-size 42px
+		text-shadow 2px 2px 7px rgba(0, 0, 0, 0.54)
+		line-height 38px
+	button
+		background-color $color !important
+		text-transform initial
+		color #FFFFFF
+		font-family $bold
+		width 100%
+		max-width 180px
+		font-size 16px
+		margin-top 20px
+		border-radius 5px
+		height 32px
+		line-height 32px
 footer
 	background-color #87898B
 	text-align center

@@ -639,7 +639,7 @@
         </section>
         <footer class="section">
             <div class="js-container">
-                <p>@copy; Copyright 2018 HP Development Company, L.P.</p>
+                <p>&copy; Copyright 2018 HP Development Company, L.P.</p>
             </div>
         </footer>
         <div class="modal fade" id="ModalConfirmar" tabindex="-1" role="dialog" aria-labelledby="simpleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
