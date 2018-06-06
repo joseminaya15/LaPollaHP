@@ -62,7 +62,7 @@
                 </div>
                 <div class="js-container p-t-5">
                     <ul class="nav nav-tabs" role="tablist">
-                        <li class="js-partidos--disabled"><a href="#Fase2" aria-controls="Fase2" role="tab" data-toggle="tab" onclick="agregarDatosElim()">Fase de Eliminatorias</a></li>
+                        <li <?php echo $bloqueo ?>><a href="#Fase2" aria-controls="Fase2" role="tab" data-toggle="tab" onclick="agregarDatosElim()">Fase de Eliminatorias</a></li>
                         <li class="active"><a href="#Fase1" aria-controls="Fase1" role="tab" data-toggle="tab">Fase de Grupos</a></li>
                     </ul>
                     <div class="tab-content">

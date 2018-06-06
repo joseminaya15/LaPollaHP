@@ -19,6 +19,11 @@ class Home extends CI_Controller {
 		$html1 = '';
 		$json = file_get_contents($url);
 	    $obj  = json_decode($json);*/
+	    $nombre   = $this->input->post('nombre');
+	    $acum    = $this->input->post('acumulado');
+	    if(isset($_GET['code']) == false){
+			header("location: http://www.marketinghp.net/microsite/La_Polla/factura");
+		}
 	    $html 			  = '';
 	    $dates 			  = '';
 	    $fecha1			  = '';
@@ -27,9 +32,9 @@ class Home extends CI_Controller {
 	    $hora 			  = date("h:i");
 	    $cont 			  = 1;
 	    $i 				  = 0;
-	    $data['nombre']   = isset($_GET['nombre']) == true ? base64_decode($_GET['nombre']) : '-';
-	    $canti 			  = isset($_GET['acumulado']) == true ? base64_decode($_GET['acumulado']) : 1;
-	    $session    	  = array('nombre' => base64_decode($_GET['nombre']));
+	    $data['nombre']   = isset($nombre) == true ? base64_decode($nombre) : '-'/*isset($_GET['nombre']) == true ? base64_decode($_GET['nombre']) : '-'*/;
+	    $canti 			  = isset($acum) == true ? intval(base64_decode($acum)) : 1/*isset($_GET['acumulado']) == true ? base64_decode($_GET['acumulado']) : 1*/;
+	    $session    	  = array('nombre' => base64_decode($nombre));
         $this->session->set_userdata($session);
         $datos = $this->M_datos->getVersus();
         foreach ($datos as $key) {
@@ -41,7 +46,7 @@ class Home extends CI_Controller {
         	$checked3 = '';
         	$cont1 = $cont+1;
 	    	$cont2 = $cont1+1;
-	    	$paises = $this->M_datos->getDatosAnotaciones(base64_decode($_GET['nombre']));
+	    	$paises = $this->M_datos->getDatosAnotaciones(base64_decode($nombre));
 	    	//$resultados = $this->M_datos->getDatosResultado();
 	    	foreach ($paises as $val) {
 	    		if($val->id_contrin == $key->Id){
@@ -61,7 +66,6 @@ class Home extends CI_Controller {
 	    			$checked2  = 'checked';
 	    		}
 	    	}
-
 	    	$dates  = explode(" ", $key->fecha_verif);
 	    	$fecha1 = $dates[0];
 	    	$hora1  = $dates[1];
@@ -73,6 +77,11 @@ class Home extends CI_Controller {
 	    		$color 	  = 'style="background-color: #D0D0D0"';
     			$disabled = 'disabled';
 	    	}
+	    	if($cont == 142 && $puntos == 10){
+             	$data['bloqueo'] = '';
+            }else {
+            	$data['bloqueo'] = 'class="js-partidos--disabled"';
+            }
         	$html .= '<div class="js-partidos" id="'.$cont.'" data-Id="'.$key->Id.'" '.$color.'>
 	                        <div class="js-partidos__fecha">
 	                            <p>'.$key->fecha_juego.' Hora Local '.$key->grupo.'</p>
@@ -110,7 +119,7 @@ class Home extends CI_Controller {
 	            $cont = $cont2+1;
 	            $i++;
         }
-        $puntos = $this->M_datos->getSumUser(base64_decode($_GET['nombre']));
+        $puntos = $this->M_datos->getSumUser(base64_decode($nombre));
         $data['html'] = $html;
 	    $data['cantidad'] = $canti ;
 	    $multi 			  = $canti/5000;
