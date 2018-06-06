@@ -60,3 +60,20 @@ function confirmarPartido(){
   partido.addClass('js-bgcolor');
   modal.modal('hide');
 }
+function agregarDatosElim(){
+  $.ajax({
+    url  : 'Home/agregarDatosElim',
+    type : 'POST'
+  }).done(function(data){
+    try{
+        data = JSON.parse(data);
+        if(data.error == 0){
+          $('#Fase2').append(data.html);
+        }else {
+          return;
+        }
+      }catch(err){
+        msj('error',err.message);
+      }
+  });
+}

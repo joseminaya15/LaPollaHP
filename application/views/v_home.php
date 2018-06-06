@@ -62,7 +62,7 @@
                 </div>
                 <div class="js-container p-t-5">
                     <ul class="nav nav-tabs" role="tablist">
-                        <li><a href="#Fase2" aria-controls="Fase2" role="tab" data-toggle="tab">Fase de Eliminatorias</a></li>
+                        <li><a href="#Fase2" aria-controls="Fase2" role="tab" data-toggle="tab" onclick="agregarDatosElim()">Fase de Eliminatorias</a></li>
                         <li class="active"><a href="#Fase1" aria-controls="Fase1" role="tab" data-toggle="tab">Fase de Grupos</a></li>
                     </ul>
                     <div class="tab-content">
@@ -76,7 +76,7 @@
                             <div class="title-fase">
                                 <p>Octavos de final</p>
                             </div>
-                            <div class="js-partidos" id="49">
+                            <!-- <div class="js-partidos" id="49">
                                 <div class="js-partidos__fecha">
                                     <p>30 jun. 2018 - 09:00 Hora Kaza Arena</p>
                                 </div>
@@ -631,7 +631,7 @@
                                 <div class="js-partidos__puntaje">
                                     <span>10 puntos</span>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>

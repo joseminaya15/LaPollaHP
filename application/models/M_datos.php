@@ -58,6 +58,40 @@ class M_datos extends  CI_Model{
       $result = $this->db->query($sql);
       return $result->result();
     }
+    function getEliminatorias(){
+      $sql = "SELECT c.Id,
+                     p.e_nombres as pais1, 
+                     P.e_img as img1, 
+                     pai.e_nombres as pais2, 
+                     pai.e_img AS img2,
+                     DATE_FORMAT(c.e_fecha, '%d/%m/%Y') AS fecha,
+                     DATE_FORMAT(c.e_fecha, '%d %M, %Y - %H : %i') AS fecha_juego,
+                     DATE_FORMAT(c.e_fecha, '%d/%m/%Y %H:%i') AS fecha_verif,
+                     c.e_grupo,
+                     c.res_e,
+                     c.estadio
+                FROM eliminatorias c
+          INNER JOIN pais_elim p
+                  ON p.Id = c.e_pais1
+          INNER JOIN pais_elim pai
+                  ON pai.Id = c.e_pais2";
+      $result = $this->db->query($sql);
+      return $result->result();
+    }
+    function getDatosAnotacionesElim($name_user){
+      $sql = "SELECT a.* 
+                FROM anotaciones_elim a
+               WHERE a.user_e = ?";
+      $result = $this->db->query($sql, array($name_user));
+      return $result->result();
+    }
+    function getSumUser($name_user){
+        $sql = "SELECT SUM(a.puntos) AS puntos
+                  FROM anotaciones a
+                 WHERE name_user = ?";
+        $result = $this->db->query($sql, array($name_user));
+        return $result->result();
+      }
     /*function getIdByNameCate($cate){
       $sql = "SELECT c.Id
                 FROM categorias c
