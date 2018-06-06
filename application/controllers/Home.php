@@ -19,11 +19,11 @@ class Home extends CI_Controller {
 		$html1 = '';
 		$json = file_get_contents($url);
 	    $obj  = json_decode($json);*/
-	    $nombre   = $this->input->post('nombre');
-	    $acum    = $this->input->post('acumulado');
-	    if(isset($_GET['code']) == false){
+	    $nombre   = /*$this->input->post('nombre')*/'YW5kcmVh';
+	    $acum    = /*$this->input->post('acumulado')*/'MTUwMDA=';
+	    /*if(isset($_GET['code']) == false){
 			header("location: http://www.marketinghp.net/microsite/La_Polla/factura");
-		}
+		}*/
 	    $html 			  = '';
 	    $dates 			  = '';
 	    $fecha1			  = '';
@@ -63,7 +63,7 @@ class Home extends CI_Controller {
 	    		}else if($val->id_contrin == $key->Id && $key->pais2 == $val->marcador){
 	    			$checked2  = 'checked';
 	    		}else if($val->empate == '1' && $val->id_contrin == $key->Id){
-	    			$checked2  = 'checked';
+	    			$checked3  = 'checked';
 	    		}
 	    	}
 	    	$dates  = explode(" ", $key->fecha_verif);
@@ -105,7 +105,7 @@ class Home extends CI_Controller {
 	                        </div>
 	                        <div class="js-partidos__empate">
 	                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-'.$cont2.'">
-	                                <input type="radio" id="option-'.$cont2.'" class="mdl-radio__button" name="options'.$cont.'" '.$checked2.' value="1" onchange="openModalConfirmar(this.id)" '.$disabled.'>
+	                                <input type="radio" id="option-'.$cont2.'" class="mdl-radio__button" name="options'.$cont.'" '.$checked3.' value="1" onchange="openModalConfirmar(this.id)" '.$disabled.'>
 	                                <span class="mdl-radio__label">Empate</span>
 	                            </label>
 	                        </div>
