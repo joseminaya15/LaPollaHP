@@ -163,10 +163,8 @@ class Home extends CI_Controller {
 	        	$cont1 = $cont+1;
 		    	$cont2 = $cont1+1;
 		    	$paises = $this->M_datos->getDatosAnotacionesElim($this->session->userdata('nombre'));
-		    	//$resultados = $this->M_datos->getDatosResultado();
 		    	foreach ($paises as $val) {
 		    		if($val->id_contr == $key->Id){
-		    			//print_r('entra1');
 		    			$color 	  = 'style="background-color: #D0D0D0"';
 		    			$disabled = 'disabled';
 		    		}
@@ -186,7 +184,6 @@ class Home extends CI_Controller {
 		    	$fecha1 = $dates[0];
 		    	$hora1  = $dates[1];
 		    	if($fecha == $fecha1 && intval(substr($hora1, 0, 2)) - intval(substr($hora, 0, 2)) <= 6){
-		    		//print_r('entra2');
 		    		$color 	  = 'style="background-color: #D0D0D0"';
 	    			$disabled = 'disabled';
 		    	}

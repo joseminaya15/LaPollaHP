@@ -6,7 +6,7 @@ function guardarScore(pais, empate, id){
   }else {
     empate = 1;
   }
-	$.ajax({
+	/*$.ajax({
 		data : {pais   : pais,
 				    empate : empate,
             cont   : cont,
@@ -26,7 +26,7 @@ function guardarScore(pais, empate, id){
       } catch (err){
         msj('error',err.message);
       }
-	});
+	});*/
 }
 function cerrarCesion(){
 	$.ajax({
@@ -47,17 +47,23 @@ function cerrarCesion(){
 }
 var modal     = $('#ModalConfirmar');
 var bgcolor   = null;
+var idpartido = null;
 function openModalConfirmar(id){
   var idCheck = $('#'+id);
   var pais    = idCheck.siblings('.mdl-radio__label').text();
+  var partido = idCheck.parents('.js-partidos').attr('id');
+  var dataId  = idCheck.parents('.js-partidos').attr('data-Id');
   modal.find('.mdl-card__supporting-text').find('h2').text(pais);
   modal.modal('show');
   bgcolor = id;
+  idpartido = partido;
+  console.log(pais);
+  console.log(bgcolor);
+  console.log(partido);
+  console.log(dataId);
 }
 function confirmarPartido(){
-  var idPartido = $('#'+bgcolor)
-  var partido   = idPartido.parents('.js-partidos');
-  partido.addClass('js-bgcolor');
+  $('#'+idpartido).addClass('js-bgcolor');
   modal.modal('hide');
 }
 function agregarDatosElim(){
