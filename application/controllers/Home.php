@@ -20,7 +20,13 @@ class Home extends CI_Controller {
 		$json = file_get_contents($url);
 	    $obj  = json_decode($json);*/
 	    $html 			  = '';
+	    $dates 			  = '';
+	    $fecha1			  = '';
+	    $hora1 			  = '';
+	    $fecha 			  = date("d/m/Y");
+	    $hora 			  = date("h:i");
 	    $cont 			  = 1;
+	    $i 				  = 0;
 	    $data['nombre']   = isset($_GET['nombre']) == true ? base64_decode($_GET['nombre']) : '-';
 	    $canti 			  = isset($_GET['acumulado']) == true ? base64_decode($_GET['acumulado']) : 1;
 	    $session    	  = array('nombre' => base64_decode($_GET['nombre']));
@@ -28,17 +34,42 @@ class Home extends CI_Controller {
         $datos = $this->M_datos->getVersus();
         foreach ($datos as $key) {
         	$disabled = '';
+        	$puntos   = 0;
         	$color = '';
-        	$checked = '';
+        	$checked1 = '';
+        	$checked2 = '';
+        	$checked3 = '';
         	$cont1 = $cont+1;
 	    	$cont2 = $cont1+1;
 	    	$paises = $this->M_datos->getDatosAnotaciones(base64_decode($_GET['nombre']));
+	    	//$resultados = $this->M_datos->getDatosResultado();
 	    	foreach ($paises as $val) {
 	    		if($val->id_contrin == $key->Id){
-	    			$color = 'style="background-color: #D0D0D0"';
+	    			$color 	  = 'style="background-color: #D0D0D0"';
 	    			$disabled = 'disabled';
-	    			$checked = 'checked';
 	    		}
+	    		if($val->id_contrin == $key->Id && $key->res_pais == $val->marcador){
+	    			$puntos = 10;
+	    		}
+	    		if($val->id_contrin == $key->Id && $key->pais1 == $val->marcador){
+	    			$checked1  = 'checked';
+	    		}else if($val->id_contrin == $key->Id && $key->pais2 == $val->marcador){
+	    			$checked2  = 'checked';
+	    		}else if($val->empate == '1' && $val->id_contrin == $key->Id){
+	    			$checked2  = 'checked';
+	    		}
+	    	}
+
+	    	$dates  = explode(" ", $key->fecha_verif);
+	    	$fecha1 = $dates[0];
+	    	$hora1  = $dates[1];
+	    	if($fecha == $fecha1 && intval(substr($hora1, 0, 2)) - intval(substr($hora, 0, 2)) <= 6){
+	    		$color 	  = 'style="background-color: #D0D0D0"';
+    			$disabled = 'disabled';
+	    	}
+	    	if($fecha > $fecha1){
+	    		$color 	  = 'style="background-color: #D0D0D0"';
+    			$disabled = 'disabled';
 	    	}
         	$html .= '<div class="js-partidos" id="'.$cont.'" data-Id="'.$key->Id.'" '.$color.'>
 	                        <div class="js-partidos__fecha">
@@ -48,7 +79,7 @@ class Home extends CI_Controller {
 	                            <div class="js-partido__versus--flag">
 	                                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect js-radio--right js-right" for="option-'.$cont.'">
 	                                    <span class="mdl-radio__label">'.$key->pais1.'</span>
-	                                    <input type="radio" id="option-'.$cont.'" class="mdl-radio__button" '.$checked.' name="options'.$cont.'" value="1" onchange="openModalConfirmar(this.id)" onclick="guardarScore(&#39;'.$key->pais1.'&#39;, &#39; &#39;, '.$cont.')" '.$disabled.'>
+	                                    <input type="radio" id="option-'.$cont.'" class="mdl-radio__button" '.$checked1.' name="options'.$cont.'" value="1" onchange="openModalConfirmar(this.id)" onclick="guardarScore(&#39;'.$key->pais1.'&#39;, &#39; &#39;, '.$cont.')" '.$disabled.'>
 	                                </label>
 	                                <img src="'.RUTA_IMG.'paises/'.$key->img1.'.png">
 	                            </div>
@@ -56,14 +87,14 @@ class Home extends CI_Controller {
 	                            <div class="js-partido__versus--flag">
 	                                <img src="'.RUTA_IMG.'paises/'.$key->img2.'.png">
 	                                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-'.$cont1.'">
-	                                    <input type="radio" id="option-'.$cont1.'" class="mdl-radio__button" '.$checked.' name="options'.$cont.'" value="1" onchange="openModalConfirmar(this.id)" onclick="guardarScore(&#39;'.$key->pais2.'&#39;, &#39; &#39;, '.$cont.')" '.$disabled.'>
+	                                    <input type="radio" id="option-'.$cont1.'" class="mdl-radio__button" '.$checked2.' name="options'.$cont.'" value="1" onchange="openModalConfirmar(this.id)" onclick="guardarScore(&#39;'.$key->pais2.'&#39;, &#39; &#39;, '.$cont.')" '.$disabled.'>
 	                                    <span class="mdl-radio__label">'.$key->pais2.'</span>
 	                                </label>
 	                            </div>
 	                        </div>
 	                        <div class="js-partidos__empate">
 	                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-'.$cont2.'">
-	                                <input type="radio" id="option-'.$cont2.'" class="mdl-radio__button" name="options'.$cont.'" '.$checked.' value="1" onchange="openModalConfirmar(this.id)" onclick="guardarScore(&#39;'.$key->pais2.', '.$key->pais2.'&#39;, &#39;Empate&#39;, '.$cont.')" '.$disabled.'>
+	                                <input type="radio" id="option-'.$cont2.'" class="mdl-radio__button" name="options'.$cont.'" '.$checked2.' value="1" onchange="openModalConfirmar(this.id)" onclick="guardarScore(&#39;'.$key->pais2.', '.$key->pais2.'&#39;, &#39;Empate&#39;, '.$cont.')" '.$disabled.'>
 	                                <span class="mdl-radio__label">Empate</span>
 	                            </label>
 	                        </div>
@@ -71,10 +102,11 @@ class Home extends CI_Controller {
 	                            <small>0 - 0</small>
 	                        </div>
 	                        <div class="js-partidos__puntaje">
-	                            <span>0 puntos</span>
+	                            <span>'.$puntos.' puntos</span>
 	                        </div>
 	                    </div>';
 	            $cont = $cont2+1;
+	            $i++;
         }
         $data['html'] = $html;
 	    $data['cantidad'] = $canti ;

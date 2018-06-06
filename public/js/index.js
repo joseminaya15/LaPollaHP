@@ -1,10 +1,6 @@
 var cont = 1;
 function guardarScore(pais, empate, id){
   var Id = $("#"+id).attr('data-Id');
-	$('#'+id).css('background', '#D0D0D0');
-  $("#"+id+" input").each(function (){ 
-    $('#'+this.id).prop( "disabled", true);
-  });
   if(empate == ' '){
     empate = 0;
   }else {

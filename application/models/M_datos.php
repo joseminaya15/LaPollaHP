@@ -34,7 +34,9 @@ class M_datos extends  CI_Model{
                      pai.img AS img2,
                      DATE_FORMAT(c.fecha, '%d/%m/%Y') AS fecha,
                      DATE_FORMAT(c.fecha, '%d %M, %Y - %H : %i') AS fecha_juego,
-                     c.grupo
+                     DATE_FORMAT(c.fecha, '%d/%m/%Y %H:%i') AS fecha_verif,
+                     c.grupo,
+                     c.res_pais
                 FROM contrincantes c
           INNER JOIN paises p
                   ON p.Id = c.id_pais1
@@ -48,6 +50,12 @@ class M_datos extends  CI_Model{
                 FROM anotaciones a
                WHERE a.name_user = ?";
       $result = $this->db->query($sql, array($name_user));
+      return $result->result();
+    }
+    function getDatosResultado(){
+      $sql = "SELECT r.* 
+                FROM resultados r";
+      $result = $this->db->query($sql);
       return $result->result();
     }
     /*function getIdByNameCate($cate){
