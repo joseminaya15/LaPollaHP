@@ -50,7 +50,7 @@
             <div class="js-container">
                 <div class="js-facturas">
                     <h2>Registra aqu&iacute; tus facturas</h2>
-                    <a href="http://www.marketinghp.net/microsite/La_Polla/login" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Ingresar</a>
+                    <a href="http://www.marketinghp.net/microsite/La_Polla/login" target="_blank" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Ingresar</a>
                 </div>
             </div>
         </section>
