@@ -122,3 +122,11 @@ function cerrarCesionHome(){
     }
   });
 }
+var $win = $(window);
+$win.scroll(function() {
+  if ($win.scrollTop() > 0) {
+    $(".js-header").addClass("navbarcolor");
+  } else {
+    $(".js-header").removeClass("navbarcolor");
+  }
+});
