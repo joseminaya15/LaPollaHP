@@ -16,4 +16,15 @@ class Concurso extends CI_Controller {
 	public function index(){
 		$this->load->view('v_concurso');
 	}
+    function cerrarCesionHome(){
+        $data['error'] = EXIT_ERROR;
+        $data['msj']   = null;
+        try {
+            session_destroy();
+            $data['error'] = EXIT_SUCCESS;
+        } catch (Exception $e){
+            $data['msj'] = $e->getMessage();
+        }
+        echo json_encode($data);
+    }
 }

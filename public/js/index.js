@@ -88,3 +88,37 @@ function agregarDatosElim(){
       }
   });
 }
+function cerrarCesion(){
+  $.ajax({
+    url  : 'Home/cerrarCesion',
+    type : 'POST'
+  }).done(function(data){
+    try{
+          data = JSON.parse(data);
+          if(data.error == 0){
+            location.href = 'http://www.marketinghp.net/microsite/La_Polla/login';
+          }else {
+            return;
+          }
+    }catch(err){
+      msj('error',err.message);
+    }
+  });
+}
+function cerrarCesionHome(){
+  $.ajax({
+    url  : 'Concurso/cerrarCesionHome',
+    type : 'POST'
+  }).done(function(data){
+    try{
+          data = JSON.parse(data);
+          if(data.error == 0){
+            location.href = 'http://www.marketinghp.net/microsite/La_Polla/login';
+          }else {
+            return;
+          }
+    }catch(err){
+      msj('error',err.message);
+    }
+  });
+}

@@ -32,8 +32,9 @@
                         <p>Incentivo para canales</p>
                     </div>
                     <div class="js-header--right">
-                        <p>Login</p>
-                        <p>Factura</p>
+                        <a href="http://test.brainblue.com/LaPolla/Concurso">Home</a>
+                        <a href="http://www.marketinghp.net/microsite/La_Polla/factura" class="link-middle">Cargar Factura</a>
+                        <a onclick="cerrarCesion()">Cerrar Sesi&oacute;n</a>
                     </div>
                 </div>
                 <div class="js-fondo">
@@ -54,7 +55,7 @@
                     </div>
                 </div>
                 <div class="js-link">
-                    <a href="">Ingreso de Factura</a>
+                    <a href="http://www.marketinghp.net/microsite/La_Polla/factura">Ingreso de Factura</a>
                     <a href="" class="active">Arma tu Score</a>
                 </div>
                 <div class="js-container js-container--title">
@@ -647,11 +648,11 @@
                 <div class="modal-content">
                     <div class="mdl-card" >
                         <div class="mdl-card__title p-b-0">
-                            <h2>¿Estas seguro de marcar esta opci&oacute;n&#63;</h2>
+                            <h2>¿Est&aacute;s seguro de marcar esta opci&oacute;n&#63;</h2>
                         </div>
                         <div class="mdl-card__supporting-text p-t-0">
                             <h2></h2>
-                            <small>Recuerda: Al confirmar no podr&aacute;s volver a marcar este partido.</small>
+                            <small>Recuerda: Al confirmar no podr&aacute;s modificar tu elecci&oacute;n.</small>
                         </div>
                         <div class="mdl-card__actions">
                             <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="confirmarPartido();guardarScore()">Confirmar</button>

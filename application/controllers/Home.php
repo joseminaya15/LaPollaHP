@@ -264,4 +264,15 @@ class Home extends CI_Controller {
 		}
 		echo json_encode($data);
 	}
+	function cerrarCesion(){
+        $data['error'] = EXIT_ERROR;
+        $data['msj']   = null;
+        try {
+            session_destroy();
+            $data['error'] = EXIT_SUCCESS;
+        } catch (Exception $e){
+            $data['msj'] = $e->getMessage();
+        }
+        echo json_encode($data);
+    }
 }
