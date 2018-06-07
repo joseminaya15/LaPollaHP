@@ -21,6 +21,14 @@ class M_datos extends  CI_Model{
       }
       return array('error' => EXIT_SUCCESS,'msj' => MSJ_UPT);
     }
+    function updatePuntos($arrayData, $nombre, $tabla){
+      $this->db->where('Nombre'  , $nombre);
+      $this->db->update($tabla, $arrayData);
+      if ($this->db->trans_status() == false){
+          throw new Exception('No se pudo actualizar los datos');
+      }
+      return array('error' => EXIT_SUCCESS,'msj' => MSJ_UPT);
+    }
     /*function deleteDatos($id_dato){
       $sql = "DELETE FROM cards WHERE Id = ?";
       $result = $this->db->query($sql, array($id_dato));

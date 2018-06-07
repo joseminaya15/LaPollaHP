@@ -35,7 +35,8 @@ class Ranking extends CI_Controller {
                     </tr>';
             $puesto++;
         }
-        $data['html'] = $html;
+        $data['participantes'] = count($datos);
+        $data['html']          = $html;
 		$this->load->view('v_ranking', $data);
 	}
 }

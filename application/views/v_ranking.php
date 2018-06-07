@@ -49,7 +49,7 @@
                     <h2>Ranking</h2>
                 </div>
                 <div class="js-participantes">
-                    <p>N&uacute;mero de participantes: 2600</p>
+                    <p>N&uacute;mero de participantes: <?php echo $participantes ?></p>
                 </div>
                 <div class="table-responsive" style="border: none">
                     <table id="tableRanking" class="table table-bordered table-hover">

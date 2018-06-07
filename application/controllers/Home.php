@@ -32,27 +32,21 @@ class Home extends CI_Controller {
 	    $i 				  = 0;
 	    $aciertos 		  = 0;
 	    if($this->input->post('nombre')/*'a'*/ != null && $this->input->post('acumulado')/*'a'*/ != null){
-	    	$nombre  = $this->input->post('nombre')/*'QW5kcmVh'*/;
+	    	$nombre  =  $this->input->post('nombre')/*'QW5kcmVh'*/;
 	    	$acum    =  $this->input->post('acumulado')/*'NjAwMA=='*/;
-	    	$email   =  base64_decode($this->input->post('email')/*'amhvbmF0YW5pYmVyaWNvbUBnbWFpbC5jb20='*/);
+	    	$email   =  base64_decode($this->input->post('email'))/*'jhonatanibericom@gmail.com'*/;
 			$data['nombre']   = isset($nombre) == true ? base64_decode($nombre) : '-';
 			$canti 			  = isset($acum) == true ? intval(base64_decode($acum)) : 1;
 	    }else {
 	    	$email    = $this->input->post('email');
 	    	$nombre   = $this->session->userdata('nombre');
 	    	$acum     = $this->session->userdata('acumulado');
-			$data['nombre']   = $nombre;
-			$canti 		  = $acum;
+			$data['nombre'] = $nombre;
+			$canti 		    = $acum;
 	    }
-	    if($this->input->post('nombre') != null && $this->input->post('acumulado') != null){
-	    $session = array('nombre'    => base64_decode($nombre),
+	    $session = array('nombre'    => $data['nombre'],
 	 				     'acumulado' => $canti,
 	 				 	 'email'     => $email);
-	    }else {
-	    	$session = array('nombre'    => $nombre,
-	 				         'acumulado' => $canti,
-	 				     	 'email'     => $email);
-	    }
         $this->session->set_userdata($session);
         $datos = $this->M_datos->getVersus();
         foreach ($datos as $key) {
@@ -64,11 +58,7 @@ class Home extends CI_Controller {
         	$checked3 = '';
         	$cont1 = $cont+1;
 	    	$cont2 = $cont1+1;
-		if($this->input->post('nombre') != null && $this->input->post('acumulado') != null){
-	    	$paises = $this->M_datos->getDatosAnotaciones(base64_decode($nombre));
-		}else {
 	    	$paises = $this->M_datos->getDatosAnotaciones($data['nombre']);
-	    	}
 	    	foreach ($paises as $val) {
 	    		if($val->id_contrin == $key->Id){
 	    			$color 	  = 'style="background-color: #D0D0D0"';
@@ -77,7 +67,7 @@ class Home extends CI_Controller {
 	    		if($val->id_contrin == $key->Id && $key->res_pais == $val->marcador){
 	    			$puntos = 10;
 	    			$arrayUpdate = array('puntos' => $puntos);
-	    			$this->M_datos->updateDatos($arrayUpdate, $val->id_contrin, 'anotaciones', 'Id');
+	    			$this->M_datos->updateDatos($arrayUpdate, $val->Id, 'anotaciones');
 	    			$aciertos++;
 	    		}
 	    		if($val->id_contrin == $key->Id && $key->pais1 == $val->marcador){
@@ -141,11 +131,7 @@ class Home extends CI_Controller {
 	            $cont = $cont2+1;
 	            $i++;
         }
-        if($this->input->post('nombre') != null && $this->input->post('acumulado') != null){
-        	$puntos = $this->M_datos->getSumUser(base64_decode($nombre));
-        }else {
-        	$puntos = $this->M_datos->getSumUser($data['nombre']);
-        }
+        $puntos = $this->M_datos->getSumUser($data['nombre']);
         $existe = $this->M_datos->getExistentes($data['nombre'], $email);
         $data['html'] = $html;
 	    $data['cantidad'] = round($canti);
@@ -163,6 +149,13 @@ class Home extends CI_Controller {
 			                 	 'aciertos'       => $aciertos,
 			                 	 'total_puntos'   => intval($multi)*$data['puntos']);
 			$datoInsert = $this->M_datos->insertarDatos($arrayInsert, 'personas');	
+        }else {
+        	$arrayUpdate = array('puntos' => $data['puntos'],
+        						 'aciertos' => $aciertos,
+        						 'monto' 	=> round($canti),
+        						 'total_puntos' => intval($multi)*$data['puntos'],
+        						 'multiplicacion' => intval($multi));
+	    	$this->M_datos->updatePuntos($arrayUpdate, $data['nombre'], 'personas');
         }
 		$this->load->view('v_home', $data);
 	}
