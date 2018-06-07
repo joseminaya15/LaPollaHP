@@ -32,10 +32,13 @@
             </div>
             <div class="js-header--right">
                 <p>Bienvenido(a) Andrea</p>
-                <a onclick="cerrarCesion()">Cerrar Sesi&oacute;n</a>
+                <a class="link-right" onclick="cerrarCesion()">Cerrar Sesi&oacute;n</a>
             </div>
         </div>
-        <section class="section p-t-50">
+        <div class="js-fondo ranking">
+            <div class="js-logo"><img src="<?php echo RUTA_IMG?>logo/logo-polla.png"></div>
+        </div>
+        <section class="section">
             <div class="js-container">
                 <div class="js-ranking">
                     <div class="js-ranking--link js-flex">
