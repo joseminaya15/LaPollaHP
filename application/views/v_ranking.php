@@ -42,9 +42,9 @@
             <div class="js-container">
                 <div class="js-ranking">
                     <div class="js-ranking--link js-flex">
-                        <a>Registrados</a>
-                        <a class="link-middle">Facturas</a>
-                        <a>Ranking</a>
+                        <a href="http://www.marketinghp.net/microsite/La_Polla/admin/hppolla18_admin.aspx">Registrados</a>
+                        <a class="link-middle" href="http://www.marketinghp.net/microsite/La_Polla/admin/hppolla18_facturas.aspx">Facturas</a>
+                        <a href="http://www.marketinghp.net/microsite/La_Polla/admin/hppolla18_ranking.aspx">Ranking Facturas</a>
                     </div>
                     <h2>Ranking</h2>
                 </div>

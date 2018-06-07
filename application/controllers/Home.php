@@ -35,18 +35,24 @@ class Home extends CI_Controller {
 	    	$nombre  =  $this->input->post('nombre')/*'QW5kcmVh'*/;
 	    	$acum    =  $this->input->post('acumulado')/*'NjAwMA=='*/;
 	    	$email   =  base64_decode($this->input->post('email'))/*'jhonatanibericom@gmail.com'*/;
+	    	$canal   =  base64_decode($this->input->post('canal'))/*'HP'*/;
+	    	$ciudad  =  base64_decode($this->input->post('ciudad'))/*'Lima'*/;
 			$data['nombre']   = isset($nombre) == true ? base64_decode($nombre) : '-';
 			$canti 			  = isset($acum) == true ? intval(base64_decode($acum)) : 1;
 	    }else {
 	    	$email    = $this->input->post('email');
 	    	$nombre   = $this->session->userdata('nombre');
 	    	$acum     = $this->session->userdata('acumulado');
+	    	$ciudad   = $this->session->userdata('ciudad');
+	    	$canal     = $this->session->userdata('canal');
 			$data['nombre'] = $nombre;
 			$canti 		    = $acum;
 	    }
 	    $session = array('nombre'    => $data['nombre'],
 	 				     'acumulado' => $canti,
-	 				 	 'email'     => $email);
+	 				 	 'email'     => $email,
+	 				 	 'canal'     => $canal,
+	 				 	 'ciudad'    => $ciudad);
         $this->session->set_userdata($session);
         $datos = $this->M_datos->getVersus();
         foreach ($datos as $key) {
@@ -144,8 +150,8 @@ class Home extends CI_Controller {
 			                 	 'monto' 		  => round($canti),
 			                 	 'puntos'         => $data['puntos'],
 			                 	 'multiplicacion' => intval($multi),
-			                 	 'ciudad' 	  	  => 'Lima',
-			                 	 'canal' 		  => 'HP',
+			                 	 'ciudad' 	  	  => $ciudad,
+			                 	 'canal' 		  => $canal,
 			                 	 'aciertos'       => $aciertos,
 			                 	 'total_puntos'   => intval($multi)*$data['puntos']);
 			$datoInsert = $this->M_datos->insertarDatos($arrayInsert, 'personas');	
