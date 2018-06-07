@@ -20,7 +20,7 @@ class Home extends CI_Controller {
 		$json = file_get_contents($url);
 	    $obj  = json_decode($json);*/
 	    $nombre   = /*$this->input->post('nombre')*/'YW5kcmVh';
-	    $acum    = /*$this->input->post('acumulado')*/'MTUwMDA=';
+	    $acum    = /*$this->input->post('acumulado')*/'NjUyNQ==';
 	    /*if(isset($_GET['code']) == false){
 			header("location: http://www.marketinghp.net/microsite/La_Polla/factura");
 		}*/
@@ -121,10 +121,10 @@ class Home extends CI_Controller {
         }
         $puntos = $this->M_datos->getSumUser(base64_decode($nombre));
         $data['html'] = $html;
-	    $data['cantidad'] = $canti ;
+	    $data['cantidad'] = round($canti);
 	    $multi 			  = $canti/5000;
 	    $data['puntos']   = isset($puntos[0]->puntos) == true ? $puntos[0]->puntos : '0';
-	    $data['multi']    = $multi;
+	    $data['multi']    = intval($multi);
 		$this->load->view('v_home', $data);
 	}
 	function guardarScore(){
