@@ -39,9 +39,9 @@
             <div class="js-container">
                 <div class="js-ranking">
                     <div class="js-ranking--link js-flex">
-                        <a href="">Registrados</a>
-                        <a href="" class="link-middle">Facturas</a>
-                        <a href="">Ranking</a>
+                        <a>Registrados</a>
+                        <a class="link-middle">Facturas</a>
+                        <a>Ranking</a>
                     </div>
                     <h2>Ranking</h2>
                 </div>
