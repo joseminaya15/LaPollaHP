@@ -102,7 +102,7 @@
         <section id="terminos" class="section">
             <div class="js-container">
                 <h2>T&eacute;rminos y condiciones</h2>
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Descargar pdf</button>
+                <a href="http://test.brainblue.com/LaPolla/public/pdf/Terminos-Condiciones.pdf" target="_blank" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Descargar pdf</a>
             </div>
         </section>  
         <footer class="section">

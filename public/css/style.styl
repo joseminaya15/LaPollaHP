@@ -152,14 +152,17 @@ p
 	left 0
 	bottom 0
 	top 0
-	height 280px
+	height 250px
 	.js-logo
 		flexCenter()
 		justify-content center
 		img
 			position relative
 			z-index 10
-			top -20px
+			top 0
+			width 100%
+			max-width 160px
+			margin-top 30px
 	&.concurso
 		background url(../img/fondo/fondo-login.jpg) no-repeat center center
 		background-size cover
@@ -167,6 +170,11 @@ p
 		margin-top 60px
 		color #FFFFFF
 		text-align center
+		.js-logo
+			img
+				max-width 236px
+				top -25px
+				margin 0
 		.js-contenido--concurso
 			margin 25px 0
 			p
@@ -296,8 +304,14 @@ p
 		width 100%
 		justify-content flex-start
 		padding 15px 20px
+	p
+		flexCenter()
+		line-height 16px
+		font-size 16px
 	span
 		font-size 30px
+		margin 0 8px
+		font-family $bold
 .js-window
 	absolute()
 	flexCenter()
