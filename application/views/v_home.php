@@ -43,7 +43,7 @@
                 <div class="js-container p-0 js-container--negative">
                     <div class="js-user">
                         <p>Hola <?php echo $nombre ?></p>
-                        <a href="">Salir</a>
+                        <a href="http://www.marketinghp.net/microsite/La_Polla/login">Salir</a>
                     </div>
                     <div class="js-score">
                         <div class="js-score__user">
