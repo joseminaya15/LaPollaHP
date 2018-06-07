@@ -38,7 +38,7 @@
         <div class="js-fondo ranking">
             <div class="js-logo"><img src="<?php echo RUTA_IMG?>logo/logo-polla.png"></div>
         </div>
-        <section class="section">
+        <section id="ranking" class="section">
             <div class="js-container">
                 <div class="js-ranking">
                     <div class="js-ranking--link js-flex">
