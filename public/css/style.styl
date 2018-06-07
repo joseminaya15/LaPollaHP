@@ -169,6 +169,7 @@ p
 		flexCenter()
 		justify-content center
 		img
+			transitionMaxWidth()
 			position relative
 			z-index 10
 			top 0
@@ -182,6 +183,7 @@ p
 		margin-top 60px
 		color #FFFFFF
 		text-align center
+		padding 0 30px
 		.js-logo
 			img
 				max-width 236px
@@ -637,6 +639,17 @@ table
 			img
 				max-width 150px
 				margin-top 45px
+		&.concurso
+			height 600px
+			padding 0 20px
+			.js-logo 
+				img
+					max-width 150px
+			.js-contenido--ganadores
+			.js-contenido--concurso 
+				p
+					font-size 28px
+					line-height 26px
 @media ( max-width: 480px )
 	.js-partidos
 		.js-partidos__versus 
