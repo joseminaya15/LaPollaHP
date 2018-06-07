@@ -52,12 +52,6 @@ class M_datos extends  CI_Model{
       $result = $this->db->query($sql, array($name_user));
       return $result->result();
     }
-    function getDatosResultado(){
-      $sql = "SELECT r.* 
-                FROM resultados r";
-      $result = $this->db->query($sql);
-      return $result->result();
-    }
     function getEliminatorias(){
       $sql = "SELECT c.Id,
                      p.e_nombres as pais1, 

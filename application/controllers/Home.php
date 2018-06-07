@@ -32,8 +32,8 @@ class Home extends CI_Controller {
 	    $hora 			  = date("h:i");
 	    $cont 			  = 1;
 	    $i 				  = 0;
-	    $data['nombre']   = isset($nombre) == true ? base64_decode($nombre) : '-'/*isset($_GET['nombre']) == true ? base64_decode($_GET['nombre']) : '-'*/;
-	    $canti 			  = isset($acum) == true ? intval(base64_decode($acum)) : 1/*isset($_GET['acumulado']) == true ? base64_decode($_GET['acumulado']) : 1*/;
+	    $data['nombre']   = isset($nombre) == true ? base64_decode($nombre) : '-';
+	    $canti 			  = isset($acum) == true ? intval(base64_decode($acum)) : 1;
 	    $session    	  = array('nombre' => base64_decode($nombre));
         $this->session->set_userdata($session);
         $datos = $this->M_datos->getVersus();
@@ -47,7 +47,6 @@ class Home extends CI_Controller {
         	$cont1 = $cont+1;
 	    	$cont2 = $cont1+1;
 	    	$paises = $this->M_datos->getDatosAnotaciones(base64_decode($nombre));
-	    	//$resultados = $this->M_datos->getDatosResultado();
 	    	foreach ($paises as $val) {
 	    		if($val->id_contrin == $key->Id){
 	    			$color 	  = 'style="background-color: #D0D0D0"';
