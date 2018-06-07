@@ -35,17 +35,17 @@
                 <a onclick="cerrarCesion()">Cerrar Sesi&oacute;n</a>
             </div>
         </div>
-        <section class="section m-t-50">
+        <section class="section p-t-50">
             <div class="js-container">
-                <div class="">
-                    <div class="-js-flex">
+                <div class="js-ranking">
+                    <div class="js-ranking--link js-flex">
                         <a href="">Registrados</a>
-                        <a href="">Facturas</a>
+                        <a href="" class="link-middle">Facturas</a>
                         <a href="">Ranking</a>
                     </div>
                     <h2>Ranking</h2>
                 </div>
-                <div class="">
+                <div class="js-participantes">
                     <p>N&uacute;mero de participantes: 2600</p>
                 </div>
                 <div class="table-responsive" style="border: none">
@@ -177,7 +177,8 @@
                             extend: 'pageLength'
                         },
                         {
-                            extend:'excel'
+                            extend:'excel',
+                            text: 'Exportar a Excel'
                         }
                     ]
                 });
