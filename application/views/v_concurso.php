@@ -31,8 +31,7 @@
                     <p>Incentivo para canales</p>
                 </div>
                 <div class="js-header--right">
-                    <p>Login</p>
-                    <p>Factura</p>
+                    <a onclick="cerrarCesionHome()">Cerrar Sesi&oacute;n</a>
                 </div>
             </div>
             <div class="js-fondo concurso">
@@ -50,7 +49,7 @@
             <div class="js-container">
                 <div class="js-facturas">
                     <h2>Registra aqu&iacute; tus facturas</h2>
-                    <a href="http://www.marketinghp.net/microsite/La_Polla/login" target="_blank" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Ingresar</a>
+                    <a href="http://www.marketinghp.net/microsite/La_Polla/factura" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Ingresar</a>
                 </div>
             </div>
         </section>
@@ -70,7 +69,7 @@
                     <div class="js-mecanica--contenido">
                         <h2>Paso 01</h2>
                         <p>Del 04 al 15 de julio sube todas tus facturas en este portal</p>
-                        <a href="" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Ingresar</a>
+                        <a href="http://www.marketinghp.net/microsite/La_Polla/factura" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Ingresar</a>
                         <div class="js-pelota">
                             <img src="<?php echo RUTA_IMG?>logo/pelota.png">
                         </div>

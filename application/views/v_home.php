@@ -32,8 +32,9 @@
                         <p>Incentivo para canales</p>
                     </div>
                     <div class="js-header--right">
-                        <p>Login</p>
-                        <p>Factura</p>
+                        <a href="http://test.brainblue.com/LaPolla/Concurso">Home</a>
+                        <a href="http://www.marketinghp.net/microsite/La_Polla/factura" class="link-middle">Cargar Factura</a>
+                        <a onclick="cerrarCesion()">Cerrar Sesi&oacute;n</a>
                     </div>
                 </div>
                 <div class="js-fondo">
@@ -54,7 +55,7 @@
                     </div>
                 </div>
                 <div class="js-link">
-                    <a href="http://www.marketinghp.net/microsite/La_Polla/login">Ingreso de Factura</a>
+                    <a href="http://www.marketinghp.net/microsite/La_Polla/factura">Ingreso de Factura</a>
                     <a href="" class="active">Arma tu Score</a>
                 </div>
                 <div class="js-container js-container--title">
