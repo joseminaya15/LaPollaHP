@@ -20,7 +20,7 @@ class Home extends CI_Controller {
 		$json = file_get_contents($url);
 	    $obj  = json_decode($json);*/
 	    $nombre   = /*$this->input->post('nombre')*/'YW5kcmVh';
-	    $acum    = /*$this->input->post('acumulado')*/'NjUyNQ==';
+	    $acum     = /*$this->input->post('acumulado')*/'NjUyNQ==';
 	    /*if(isset($_GET['code']) == false){
 			header("location: http://www.marketinghp.net/microsite/La_Polla/factura");
 		}*/
@@ -34,7 +34,8 @@ class Home extends CI_Controller {
 	    $i 				  = 0;
 	    $data['nombre']   = isset($nombre) == true ? base64_decode($nombre) : '-';
 	    $canti 			  = isset($acum) == true ? intval(base64_decode($acum)) : 1;
-	    $session    	  = array('nombre' => base64_decode($nombre));
+	    $session    	  = array('nombre'    => base64_decode($nombre),
+	 							  'acumulado' => $acum);
         $this->session->set_userdata($session);
         $datos = $this->M_datos->getVersus();
         foreach ($datos as $key) {
