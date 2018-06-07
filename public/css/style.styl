@@ -121,6 +121,11 @@ p
 	margin 0
 .js-flex
 	flexCenter()
+.js-fixed
+	position fixed
+	bottom 0
+	width 100%
+	z-index 10
 .js-header
 	position fixed
 	top 0
@@ -462,8 +467,6 @@ p
 .js-participantes
 	border-top 1px solid #757575
 	padding 20px 0
-#ranking
-	height calc(100vh - 310px)
 .js-ranking
 	.js-ranking--link
 		a
@@ -661,6 +664,9 @@ table
 			left 0
 			bottom 0
 			text-align left
+	.js-fixed
+		.js-container
+			padding 10px
 @media ( max-width: 600px )
 	.js-container
 		align-items center

@@ -133,7 +133,7 @@
                 </div>
             </div>
         </section>
-        <footer class="section">
+        <footer class="section js-fixed">
             <div class="js-container">
                 <p>&copy; Copyright 2018 HP Development Company, L.P.</p>
             </div>
