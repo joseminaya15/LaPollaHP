@@ -47,7 +47,7 @@ class Home extends CI_Controller {
         	$cont1 = $cont+1;
 	    	$cont2 = $cont1+1;
 	    	$paises = $this->M_datos->getDatosAnotaciones(base64_decode($nombre));
-	    	foreach ($paises as $val) {
+	    	foreach ($paises as $val){
 	    		if($val->id_contrin == $key->Id){
 	    			$color 	  = 'style="background-color: #D0D0D0"';
 	    			$disabled = 'disabled';
