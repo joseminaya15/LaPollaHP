@@ -19,8 +19,6 @@ class Home extends CI_Controller {
 		$html1 = '';
 		$json = file_get_contents($url);
 	    $obj  = json_decode($json);*/
-	    $nombre   = /*$this->input->post('nombre')*/'YW5kcmVh';
-	    $acum     = /*$this->input->post('acumulado')*/'NjUyNQ==';
 	    /*if(isset($_GET['code']) == false){
 			header("location: http://www.marketinghp.net/microsite/La_Polla/factura");
 		}*/
@@ -32,10 +30,24 @@ class Home extends CI_Controller {
 	    $hora 			  = date("h:i");
 	    $cont 			  = 1;
 	    $i 				  = 0;
-	    $data['nombre']   = isset($nombre) == true ? base64_decode($nombre) : '-';
-	    $canti 			  = isset($acum) == true ? intval(base64_decode($acum)) : 1;
+	    if(/*$this->input->post('nombre')*/'a' != null && /*$this->input->post('acumulado')*/'a' != null){
+	    	$nombre   = /*$this->input->post('nombre')*/'QW5kcmVh';
+	    	$acum    =  /*$this->input->post('acumulado')*/'NjAwMA==';
+		$data['nombre']   = isset($nombre) == true ? base64_decode($nombre) : '-';
+		$canti 			  = isset($acum) == true ? intval(base64_decode($acum)) : 1;
+	    }else {
+	    	$nombre   = $this->session->userdata('nombre');
+	    	$acum     = $this->session->userdata('acumulado');
+		$data['nombre']   = $nombre;
+		$canti 		  = $acum;
+	    }
+	    if($this->input->post('nombre') != null && $this->input->post('acumulado') != null){
 	    $session    	  = array('nombre'    => base64_decode($nombre),
-	 							  'acumulado' => $acum);
+	 				  'acumulado' => $canti);
+	    }else {
+	    	$session    	  = array('nombre'    => $nombre,
+	 				  'acumulado' => $canti);
+	    }
         $this->session->set_userdata($session);
         $datos = $this->M_datos->getVersus();
         foreach ($datos as $key) {
@@ -47,8 +59,12 @@ class Home extends CI_Controller {
         	$checked3 = '';
         	$cont1 = $cont+1;
 	    	$cont2 = $cont1+1;
+		if($this->input->post('nombre') != null && $this->input->post('acumulado') != null){
 	    	$paises = $this->M_datos->getDatosAnotaciones(base64_decode($nombre));
-	    	foreach ($paises as $val){
+		}else {
+	    	$paises = $this->M_datos->getDatosAnotaciones($nombre);
+	    	}
+	    	foreach ($paises as $val) {
 	    		if($val->id_contrin == $key->Id){
 	    			$color 	  = 'style="background-color: #D0D0D0"';
 	    			$disabled = 'disabled';
