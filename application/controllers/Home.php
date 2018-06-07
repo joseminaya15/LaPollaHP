@@ -30,23 +30,28 @@ class Home extends CI_Controller {
 	    $hora 			  = date("h:i");
 	    $cont 			  = 1;
 	    $i 				  = 0;
-	    if(/*$this->input->post('nombre')*/'a' != null && /*$this->input->post('acumulado')*/'a' != null){
-	    	$nombre   = /*$this->input->post('nombre')*/'QW5kcmVh';
-	    	$acum    =  /*$this->input->post('acumulado')*/'NjAwMA==';
-		$data['nombre']   = isset($nombre) == true ? base64_decode($nombre) : '-';
-		$canti 			  = isset($acum) == true ? intval(base64_decode($acum)) : 1;
+	    $aciertos 		  = 0;
+	    if($this->input->post('nombre')/*'a'*/ != null && $this->input->post('acumulado')/*'a'*/ != null){
+	    	$nombre  = $this->input->post('nombre')/*'QW5kcmVh'*/;
+	    	$acum    =  $this->input->post('acumulado')/*'NjAwMA=='*/;
+	    	$email   =  base64_decode($this->input->post('email')/*'amhvbmF0YW5pYmVyaWNvbUBnbWFpbC5jb20='*/);
+			$data['nombre']   = isset($nombre) == true ? base64_decode($nombre) : '-';
+			$canti 			  = isset($acum) == true ? intval(base64_decode($acum)) : 1;
 	    }else {
+	    	$email    = $this->input->post('email');
 	    	$nombre   = $this->session->userdata('nombre');
 	    	$acum     = $this->session->userdata('acumulado');
-		$data['nombre']   = $nombre;
-		$canti 		  = $acum;
+			$data['nombre']   = $nombre;
+			$canti 		  = $acum;
 	    }
 	    if($this->input->post('nombre') != null && $this->input->post('acumulado') != null){
-	    $session    	  = array('nombre'    => base64_decode($nombre),
-	 				  'acumulado' => $canti);
+	    $session = array('nombre'    => base64_decode($nombre),
+	 				     'acumulado' => $canti,
+	 				 	 'email'     => $email);
 	    }else {
-	    	$session    	  = array('nombre'    => $nombre,
-	 				  'acumulado' => $canti);
+	    	$session = array('nombre'    => $nombre,
+	 				         'acumulado' => $canti,
+	 				     	 'email'     => $email);
 	    }
         $this->session->set_userdata($session);
         $datos = $this->M_datos->getVersus();
@@ -62,7 +67,7 @@ class Home extends CI_Controller {
 		if($this->input->post('nombre') != null && $this->input->post('acumulado') != null){
 	    	$paises = $this->M_datos->getDatosAnotaciones(base64_decode($nombre));
 		}else {
-	    	$paises = $this->M_datos->getDatosAnotaciones($nombre);
+	    	$paises = $this->M_datos->getDatosAnotaciones($data['nombre']);
 	    	}
 	    	foreach ($paises as $val) {
 	    		if($val->id_contrin == $key->Id){
@@ -73,6 +78,7 @@ class Home extends CI_Controller {
 	    			$puntos = 10;
 	    			$arrayUpdate = array('puntos' => $puntos);
 	    			$this->M_datos->updateDatos($arrayUpdate, $val->id_contrin, 'anotaciones', 'Id');
+	    			$aciertos++;
 	    		}
 	    		if($val->id_contrin == $key->Id && $key->pais1 == $val->marcador){
 	    			$checked1  = 'checked';
@@ -135,12 +141,29 @@ class Home extends CI_Controller {
 	            $cont = $cont2+1;
 	            $i++;
         }
-        $puntos = $this->M_datos->getSumUser(base64_decode($nombre));
+        if($this->input->post('nombre') != null && $this->input->post('acumulado') != null){
+        	$puntos = $this->M_datos->getSumUser(base64_decode($nombre));
+        }else {
+        	$puntos = $this->M_datos->getSumUser($data['nombre']);
+        }
+        $existe = $this->M_datos->getExistentes($data['nombre'], $email);
         $data['html'] = $html;
 	    $data['cantidad'] = round($canti);
 	    $multi 			  = $canti/5000;
 	    $data['puntos']   = isset($puntos[0]->puntos) == true ? $puntos[0]->puntos : '0';
 	    $data['multi']    = intval($multi);
+	    if($existe[0]->existe == 0) {
+        	$arrayInsert = array('Nombre' 	   	  => $data['nombre'],
+			                     'Correo'  	   	  => $email,
+			                 	 'monto' 		  => round($canti),
+			                 	 'puntos'         => $data['puntos'],
+			                 	 'multiplicacion' => intval($multi),
+			                 	 'ciudad' 	  	  => 'Lima',
+			                 	 'canal' 		  => 'HP',
+			                 	 'aciertos'       => $aciertos,
+			                 	 'total_puntos'   => intval($multi)*$data['puntos']);
+			$datoInsert = $this->M_datos->insertarDatos($arrayInsert, 'personas');	
+        }
 		$this->load->view('v_home', $data);
 	}
 	function guardarScore(){

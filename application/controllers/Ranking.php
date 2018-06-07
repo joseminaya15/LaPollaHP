@@ -14,6 +14,28 @@ class Ranking extends CI_Controller {
     }
 
 	public function index(){
-		$this->load->view('v_ranking');
+        $html    = '';
+        $puesto  = 1;
+        $datos   = $this->M_datos->getRankingPuntos();
+        if(count($datos) == 0){
+            return;
+        }
+        foreach ($datos as $key) {
+            $html .= '<tr>
+                        <td>'.$key->Nombre.'</td>
+                        <td>'.$key->ciudad.'</td>
+                        <td>'.$key->canal.'</td>
+                        <td>'.$key->Correo.'</td>
+                        <td>'.$key->monto.'</td>
+                        <td>'.$key->aciertos.'</td>
+                        <td>'.$key->puntos.'</td>
+                        <td>x'.$key->multiplicacion.'</td>
+                        <td>'.$key->total_puntos.'</td>
+                        <td>'.$puesto.'</td>
+                    </tr>';
+            $puesto++;
+        }
+        $data['html'] = $html;
+		$this->load->view('v_ranking', $data);
 	}
 }

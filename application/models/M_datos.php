@@ -86,6 +86,19 @@ class M_datos extends  CI_Model{
         $result = $this->db->query($sql, array($name_user));
         return $result->result();
       }
+      function getRankingPuntos(){
+        $sql = "SELECT * FROM personas";
+        $result = $this->db->query($sql);
+        return $result->result();
+      }
+      function getExistentes($nombre, $email){
+        $sql = "SELECT count(p.Nombre) AS existe
+                  FROM personas p
+                 WHERE p.Nombre LIKE '%".$nombre."%'
+                   AND p.Correo LIKE '".$email."'";
+        $result = $this->db->query($sql);
+        return $result->result();
+      }
     /*function getIdByNameCate($cate){
       $sql = "SELECT c.Id
                 FROM categorias c

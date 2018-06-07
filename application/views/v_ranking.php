@@ -68,66 +68,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>Jose</td>
-                                <td>Lima</td>
-                                <td>HD</td>
-                                <td>jose.minayac15@gmail.com</td>
-                                <td>1200</td>
-                                <td>5</td>
-                                <td>3000</td>
-                                <td>X3</td>
-                                <td>9000</td>
-                                <td>2</td>
-                            </tr>
-                            <tr>
-                                <td>Jose</td>
-                                <td>Lima</td>
-                                <td>HD</td>
-                                <td>jose.minayac15@gmail.com</td>
-                                <td>1200</td>
-                                <td>5</td>
-                                <td>3000</td>
-                                <td>X3</td>
-                                <td>9000</td>
-                                <td>2</td>
-                            </tr>
-                            <tr>
-                                <td>Jose</td>
-                                <td>Lima</td>
-                                <td>HD</td>
-                                <td>jose.minayac15@gmail.com</td>
-                                <td>1200</td>
-                                <td>5</td>
-                                <td>3000</td>
-                                <td>X3</td>
-                                <td>9000</td>
-                                <td>2</td>
-                            </tr>
-                            <tr>
-                                <td>Jose</td>
-                                <td>Lima</td>
-                                <td>HD</td>
-                                <td>jose.minayac15@gmail.com</td>
-                                <td>1200</td>
-                                <td>5</td>
-                                <td>3000</td>
-                                <td>X3</td>
-                                <td>9000</td>
-                                <td>2</td>
-                            </tr>
-                            <tr>
-                                <td>Jose</td>
-                                <td>Lima</td>
-                                <td>HD</td>
-                                <td>jose.minayac15@gmail.com</td>
-                                <td>1200</td>
-                                <td>5</td>
-                                <td>3000</td>
-                                <td>X3</td>
-                                <td>9000</td>
-                                <td>2</td>
-                            </tr>
+                            <?php echo $html ?>
                         </tbody>
                     </table>
                 </div>
