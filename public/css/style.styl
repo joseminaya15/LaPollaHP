@@ -149,7 +149,7 @@ p
 			text-decoration none
 			color #FFFFFF
 			font-size 16px
-			line-height 14px
+			line-height 16px
 			cursor pointer
 			&.link-middle
 				padding 0 5px
@@ -394,7 +394,7 @@ p
 	flexCenter()
 	justify-content flex-end
 	width 100%
-	margin-bottom 5px
+	padding 5px 10px
 	p
 		margin 0
 		padding 0 10px
@@ -632,6 +632,11 @@ table
 @media ( max-width: 600px )
 	.js-container
 		align-items center
+	.js-fondo 
+		.js-logo 
+			img
+				max-width 150px
+				margin-top 45px
 @media ( max-width: 480px )
 	.js-partidos
 		.js-partidos__versus 
@@ -639,5 +644,23 @@ table
 				padding 0 5px
 		.mdl-radio__label
 			font-size 14px
-			line-height 16px !important	
-					
+			line-height 16px !important
+	.js-score
+		display block
+		.js-score__user
+			justify-content center
+			border none
+			border-bottom 2px solid #FFFFFF
+		.js-score__monto
+			justify-content center
+	.js-container--title
+		h2
+			text-align center
+	.js-header
+		padding 10px 
+		.js-header--right 
+			a
+				&.link-middle
+					padding-right 0
+					margin-right 0
+					border-right none					
