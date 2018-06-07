@@ -32,7 +32,7 @@
                         <p>Incentivo para canales</p>
                     </div>
                     <div class="js-header--right">
-                        <a href="http://test.brainblue.com/LaPolla/Concurso">Home</a>
+                        <a href="http://www.marketinghp.net/LaPolla/Concurso">Home</a>
                         <a href="http://www.marketinghp.net/microsite/La_Polla/factura" class="link-middle">Cargar Factura</a>
                         <a onclick="cerrarCesion()">Cerrar Sesi&oacute;n</a>
                     </div>
