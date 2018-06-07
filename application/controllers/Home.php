@@ -48,9 +48,9 @@ class Home extends CI_Controller {
 			$data['nombre'] = $nombre;
 			$canti 		    = $acum;
 	    }
-	    if($data['nombre'] == '-'){
-				return;
-			}
+	    if($data['nombre'] == '-' || $data['nombre'] == '' || $data['nombre'] == null){
+			return;
+		}
 	    $session = array('nombre'    => $data['nombre'],
 	 				     'acumulado' => $canti,
 	 				 	 'email'     => $email,
