@@ -18,7 +18,18 @@ class Ranking extends CI_Controller {
         $puesto  = 1;
         $datos   = $this->M_datos->getRankingPuntos();
         if(count($datos) == 0){
-            return;
+            $html = '<tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>';
         }
         foreach ($datos as $key) {
             $html .= '<tr>

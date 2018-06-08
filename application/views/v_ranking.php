@@ -31,7 +31,7 @@
                 <p>Incentivo para canales</p>
             </div>
             <div class="js-header--right">
-                <p>Bienvenido(a) Andrea</p>
+                <p>Bienvenido(a) Margarita</p>
                 <a class="link-right" onclick="cerrarCesion()">Cerrar Sesi&oacute;n</a>
             </div>
         </div>
