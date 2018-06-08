@@ -37,7 +37,7 @@
             <div class="js-fondo concurso">
                 <div class="js-logo"><img src="<?php echo RUTA_IMG?>logo/logo-polla.png"></div>
                 <div class="js-contenido--concurso">
-                    <p>Registra tus facturas y ll&eacute;vate uno de estos famulosos premios</p>
+                    <p>Registra tus facturas y ll&eacute;vate uno de estos fabulosos premios</p>
                     <img src="<?php echo RUTA_IMG?>logo/premios.png">
                 </div>
                 <div class="js-contenido--ganadores">
