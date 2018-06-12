@@ -44,7 +44,7 @@
                     <div class="js-ranking--link js-flex">
                         <a href="http://www.marketinghp.net/microsite/La_Polla/admin/hppolla18_admin.aspx">Registrados</a>
                         <a class="link-middle" href="http://www.marketinghp.net/microsite/La_Polla/admin/hppolla18_facturas.aspx">Facturas</a>
-                        <a href="http://www.marketinghp.net/microsite/La_Polla/admin/hppolla18_ranking.aspx">Ranking Facturas</a>
+                        <a class="link-right" href="http://www.marketinghp.net/microsite/La_Polla/admin/hppolla18_ranking.aspx">Ranking Facturas</a>
                         <a href="http://www.marketinghp.net/LaPolla/Ranking">Ranking Puntos</a>
                     </div>
                     <h2>Ranking</h2>
