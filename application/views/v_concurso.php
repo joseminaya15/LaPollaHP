@@ -4,7 +4,7 @@
         <meta charset="ISO-8859-1">
         <meta http-equiv="X-UA-Compatible"  content="IE=edge">
         <meta name="viewport"               content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-        <meta name="description"            content="Proyecto de desarrollo de un producto wizard online que tenga un quiz y con una unica solucion que es SAP Cloud Configurator">
+        <meta name="description"            content="Proyecto de HP Incentivo La Polla">
         <meta name="keywords"               content="HP Incentivo La Polla">
         <meta name="robots"                 content="Index,Follow">
         <meta name="date"                   content="May 29, 2018"/>
@@ -56,8 +56,8 @@
         <section id="participantes" class="section">
             <div class="js-container">
                 <div class="js-contenido--participantes">
-                    <h2>Productos particpantes</h2>
-                    <p>Todos los productos de las Categorías: Cómputo Comercial (Notebook, Pc),Impresión Comercial (Láser / Page Wide), Suministro Comercial (Tóner), Workstation, Monitores y Accesorios.</p>
+                    <h2>Productos participantes</h2>
+                    <p>Todos los productos de las Categorías: Cómputo Comercial (Notebook, Pc),Impresión Comercial (Láser / Page Wide), Suministro Comercial (Tóners - Tintas para Page Wide), Workstation, Monitores y Accesorios.</p>
                 </div>
                 <img src="<?php echo RUTA_IMG?>logo/productos.png">
             </div>
