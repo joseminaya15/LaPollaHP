@@ -32,7 +32,7 @@
             </div>
             <div class="js-header--right">
                 <p>Bienvenido(a) Margarita</p>
-                <a class="link-right" onclick="cerrarCesion()">Cerrar Sesi&oacute;n</a>
+                <a class="link-right" href="http://www.marketinghp.net/microsite/La_Polla/admin/hppolla18_login">Cerrar Sesi&oacute;n</a>
             </div>
         </div>
         <div class="js-fondo ranking">
@@ -91,13 +91,7 @@
         <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
         <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.1/js/dataTables.buttons.min.js"></script>
         <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.bootstrap.min.js"></script>
-        <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.colVis.min.js"></script>
-        <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.flash.min.js"></script>
-        <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.html5.min.js"></script>
-        <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.print.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
-        <script src="<?php echo RUTA_JS?>Utils.js?v=<?php echo time();?>"></script>
+        <script src="<?php echo RUTA_JS?>jsutils.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_JS?>index.js?v=<?php echo time();?>"></script>
         <script type="text/javascript">
             if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {

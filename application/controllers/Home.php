@@ -31,12 +31,12 @@ class Home extends CI_Controller {
 	    $cont 			  = 1;
 	    $i 				  = 0;
 	    $aciertos 		  = 0;
-	    if($this->input->post('nombre')/*'a'*/ != null && $this->input->post('acumulado')/*'a'*/ != null){
-	    	$nombre  =  $this->input->post('nombre')/*'QW5kcmVh'*/;
-	    	$acum    =  $this->input->post('acumulado')/*'NjAwMA=='*/;
-	    	$email   =  base64_decode($this->input->post('email'))/*'jhonatanibericom@gmail.com'*/;
-	    	$canal   =  base64_decode($this->input->post('canal'))/*'HP'*/;
-	    	$ciudad  =  base64_decode($this->input->post('ciudad'))/*'Lima'*/;
+	    if(/*$this->input->post('nombre')*/'a' != null && /*$this->input->post('acumulado')*/'a' != null){
+	    	$nombre  =  /*$this->input->post('nombre')*/'QW5kcmVh';
+	    	$acum    =  /*$this->input->post('acumulado')*/'NjAwMA==';
+	    	$email   =  /*base64_decode($this->input->post('email'))*/'jhonatanibericom@gmail.com';
+	    	$canal   =  /*base64_decode($this->input->post('canal'))*/'HP';
+	    	$ciudad  =  /*base64_decode($this->input->post('ciudad'))*/'Lima';
 			$data['nombre']   = isset($nombre) == true ? base64_decode($nombre) : '-';
 			$canti 			  = isset($acum) == true ? intval(base64_decode($acum)) : 1;
 	    }else {

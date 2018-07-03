@@ -37,7 +37,7 @@ function cerrarCesion(){
 		try{
         data = JSON.parse(data);
         if(data.error == 0){
-        	location.href = 'http://www.marketinghp.net/microsite/La_Polla/admin/hppolla18_login';
+        	location.href = 'Login';
         }else {
         	return;
         }

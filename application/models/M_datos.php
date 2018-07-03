@@ -95,7 +95,8 @@ class M_datos extends  CI_Model{
         return $result->result();
       }
       function getRankingPuntos(){
-        $sql = "SELECT * FROM personas";
+        $sql = "SELECT Id, Nombre, Correo, monto, MAX(puntos) AS puntos, ciudad, MAX(multiplicacion),  canal, MAX(aciertos) AS aciertos, MAX(total_puntos) AS total_puntos  FROM personas
+                GROUP BY Nombre";
         $result = $this->db->query($sql);
         return $result->result();
       }
