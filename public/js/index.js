@@ -11,7 +11,8 @@ function guardarScore(/*pais, empate, id*/){
 		data : {pais   : pais_glob,
 				    empate : empate,
             cont   : cont,
-            Id     : dataId_glob},
+            Id     : dataId_glob,
+            dato_var : dato_var},
 		url  : 'Home/guardarScore',
 		type : 'POST'
 	}).done(function(data){
@@ -130,3 +131,7 @@ $win.scroll(function() {
     $(".js-header").removeClass("navbarcolor");
   }
 });
+var dato_var = 0;
+function variable(num){
+  dato_var = num;
+}
